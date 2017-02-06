@@ -1,0 +1,43 @@
+   02/02/2017 14:16:32      MCTIPROGRA8   El nombre de objeto 'x' no es válido.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 156
+   en PV.Form1.Form1_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Form1.cs:línea 25
+
+   02/02/2017 14:17:07      MCTIPROGRA8   El nombre de objeto 'x' no es válido.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 156
+   en PV.Form1.Form1_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Form1.cs:línea 25
+
+   03/02/2017 9:12:06      MCTIPROGRA8   El nombre de objeto 'TblRol' no es válido.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 156
+   en PV.BL.ClsSeguridad.seleccionarRol() en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 18
+   en PV.FrmRol.cargarComboRol() en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmRol.cs:línea 28
+
+   03/02/2017 9:32:46      MCTIPROGRA8   El nombre de objeto 'TblSecRol' no es válido.   consultarTabla      en PV.ClsDb.consultarTabla(String sqlQuery) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 156
+   en PV.BL.ClsSeguridad.seleccionarRol() en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 18
+   en PV.FrmRol.cargarComboRol() en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmRol.cs:línea 28
+
+   03/02/2017 12:43:47      MCTIPROGRA8   Procedure or function 'SpFormulariosRol' expects parameter '@PidRol', which was not supplied.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsSeguridad.selecFormulariosRol(Int32 idRol) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 29
+   en PV.FrmRol.cboRol_SelectionChangeCommitted(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmRol.cs:línea 51
+
+   03/02/2017 15:38:58      MCTIPROGRA8   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt16(String value)
+   en PV.FrmRol.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmRol.cs:línea 113
+
+   03/02/2017 15:49:08      MCTIPROGRA8   La cadena de entrada no tiene el formato correcto.   StringToNumber      en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en PV.FrmRol.btnGrabar_Click(Object sender, EventArgs e)
+
+   06/02/2017 11:36:02      MCTIPROGRA8   ExecuteScalar requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.   consultarEscalar      en PV.ClsDb.consultarEscalar(String sqlQuery, SqlConnection cn) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 239
+   en PV.BL.ClsSeguridad.existeNombreRol(String nombre) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 65
+   en PV.Vistas.FrmNuevoRol.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmNuevoRol.cs:línea 25
+
+   06/02/2017 16:39:43      MCTIPROGRA8   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 34
+   en PV.ClsDb.Parametro(String nombre, String valor) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 313
+   en PV.BL.ClsSeguridad.grabarModificarUsuario(String idUsuario, String nombre, String usuario, String fechaNacimiento, String descripcion, String activo, String cambiarContrasena) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 92
+   en PV.Vistas.FrmUsuario.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmUsuario.cs:línea 38
+
+   06/02/2017 16:40:45      MCTIPROGRA8   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 34
+   en PV.ClsDb.Parametro(String nombre, String valor) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 313
+   en PV.BL.ClsSeguridad.grabarModificarUsuario(String idUsuario, String nombre, String usuario, String fechaNacimiento, String descripcion, String activo, String cambiarContrasena) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 92
+   en PV.Vistas.FrmUsuario.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmUsuario.cs:línea 38
+
