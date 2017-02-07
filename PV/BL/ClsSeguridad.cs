@@ -93,6 +93,20 @@ namespace PV.BL
             }
         }
 
+        public DataTable buscarUsuario(string criterio) {
+            DataTable res;
+            try
+            {
+                res = consultarTabla("SpBuscarUsuario", null, Parametro("@Pcriterio", criterio));
+                return res;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
 
     }
 }

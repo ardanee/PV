@@ -94,3 +94,19 @@ C:\Sistemas San Diego\PV\PV\PV\bin\Debug\de\DevExpress.Office.v16.1.Core.resourc
 C:\Sistemas San Diego\PV\PV\PV\bin\Debug\es\DevExpress.Office.v16.1.Core.resources.dll
 C:\Sistemas San Diego\PV\PV\PV\bin\Debug\ja\DevExpress.Office.v16.1.Core.resources.dll
 C:\Sistemas San Diego\PV\PV\PV\bin\Debug\ru\DevExpress.Office.v16.1.Core.resources.dll
+D:\github\PV\PV\bin\Debug\PV.exe.config
+D:\github\PV\PV\obj\Debug\PV.exe
+D:\github\PV\PV\obj\Debug\PV.pdb
+D:\github\PV\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache
+D:\github\PV\PV\obj\Debug\PV.Form1.resources
+D:\github\PV\PV\obj\Debug\PV.Properties.Resources.resources
+D:\github\PV\PV\obj\Debug\PV.Vistas.FrmNuevoRol.resources
+D:\github\PV\PV\obj\Debug\PV.FrmRol.resources
+D:\github\PV\PV\obj\Debug\PV.Vistas.FrmUsuario.resources
+D:\github\PV\PV\obj\Debug\PV.csproj.GenerateResource.Cache
+D:\github\PV\PV\obj\Debug\PV.exe.licenses
+D:\github\PV\PV\bin\Debug\PV.exe
+D:\github\PV\PV\bin\Debug\PV.pdb
+D:\github\PV\PV\bin\Debug\ClosedXML.dll
+D:\github\PV\PV\bin\Debug\DocumentFormat.OpenXml.dll
+D:\github\PV\PV\bin\Debug\ClosedXML.pdb

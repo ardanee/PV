@@ -41,3 +41,7 @@
    en PV.BL.ClsSeguridad.grabarModificarUsuario(String idUsuario, String nombre, String usuario, String fechaNacimiento, String descripcion, String activo, String cambiarContrasena) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 92
    en PV.Vistas.FrmUsuario.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\FrmUsuario.cs:línea 38
 
+   6/02/2017 20:21:02      KKROT-PC   Error al convertir el tipo de datos nvarchar a date.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsSeguridad.grabarModificarUsuario(String idUsuario, String nombre, String usuario, String fechaNacimiento, String descripcion, String activo, String cambiarContrasena)
+   en PV.Vistas.FrmUsuario.btnGrabar_Click(Object sender, EventArgs e)
+
