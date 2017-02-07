@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\ClsSeguridad.cs" />
+    <Compile Include="BL\ClsTipoVehiculo.cs" />
     <Compile Include="DB\ClsDb.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -66,23 +67,29 @@
     <Compile Include="Helpers\ClsHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\FrmNuevoRol.cs">
+    <Compile Include="Vistas\seguridad\FrmNuevoRol.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoRol.Designer.cs">
+    <Compile Include="Vistas\seguridad\FrmNuevoRol.Designer.cs">
       <DependentUpon>FrmNuevoRol.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmRol.cs">
+    <Compile Include="Vistas\seguridad\FrmRol.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmRol.Designer.cs">
+    <Compile Include="Vistas\seguridad\FrmRol.Designer.cs">
       <DependentUpon>FrmRol.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmUsuario.cs">
+    <Compile Include="Vistas\seguridad\FrmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmUsuario.Designer.cs">
+    <Compile Include="Vistas\seguridad\FrmUsuario.Designer.cs">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmTipoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmTipoVehiculo.Designer.cs">
+      <DependentUpon>frmTipoVehiculo.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -98,14 +105,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vistas\FrmNuevoRol.resx">
+    <EmbeddedResource Include="Vistas\seguridad\FrmNuevoRol.resx">
       <DependentUpon>FrmNuevoRol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmRol.resx">
+    <EmbeddedResource Include="Vistas\seguridad\FrmRol.resx">
       <DependentUpon>FrmRol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmUsuario.resx">
+    <EmbeddedResource Include="Vistas\seguridad\FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\frmTipoVehiculo.resx">
+      <DependentUpon>frmTipoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -123,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reportes\" />
+    <Folder Include="Vistas\movimientos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pencil.png" />
