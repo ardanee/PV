@@ -64,6 +64,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ClsGlobals.cs" />
     <Compile Include="Helpers\ClsHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +79,12 @@
     </Compile>
     <Compile Include="Vistas\seguridad\FrmRol.Designer.cs">
       <DependentUpon>FrmRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\seguridad\FrmRolUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\seguridad\FrmRolUsuario.Designer.cs">
+      <DependentUpon>FrmRolUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\seguridad\FrmUsuario.cs">
       <SubType>Form</SubType>
@@ -111,6 +118,9 @@
     <EmbeddedResource Include="Vistas\seguridad\FrmRol.resx">
       <DependentUpon>FrmRol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\seguridad\FrmRolUsuario.resx">
+      <DependentUpon>FrmRolUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\seguridad\FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\account-settings-variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

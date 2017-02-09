@@ -107,6 +107,33 @@ namespace PV.BL
             }
         }
 
+        public DataTable cargarRolUsuario(string idUsuario)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                dt = consultarTabla("SpSrolUsuario", null, Parametro("@PidUsuario", idUsuario));
+                return dt;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void  asignarDesasignarRol(string idUsuario, string idRol, string acceso) {
+            try
+            {
+                ejecutarSP("SpAsignarDesasignarRol", null, Parametro("@PidUsuario", idUsuario), Parametro("@PidRol", idRol), Parametro("@Pacceso", acceso));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
 
     }
 }

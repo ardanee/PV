@@ -127,6 +127,12 @@ namespace PV.Vistas
                         chkReiniciarContrasena.Checked = grdExistentes.SelectedRows[0].Cells["cambiarContrasenaCol"].Value.ToString() == "1" ? true : false;
                         break;
 
+                    case 1:
+                        PV.Vistas.FrmRolUsuario frm = new PV.Vistas.FrmRolUsuario();
+                        frm.idUsuario= grdExistentes.SelectedRows[0].Cells["idUsuarioCol"].Value.ToString();
+                        frm.usuario = grdExistentes.SelectedRows[0].Cells["nombreCol"].Value.ToString();
+                        frm.ShowDialog();
+                        break;
                 }
 
             }

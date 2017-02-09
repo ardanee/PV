@@ -45,3 +45,17 @@
    en PV.BL.ClsSeguridad.grabarModificarUsuario(String idUsuario, String nombre, String usuario, String fechaNacimiento, String descripcion, String activo, String cambiarContrasena)
    en PV.Vistas.FrmUsuario.btnGrabar_Click(Object sender, EventArgs e)
 
+   09/02/2017 8:58:59      MCTIPROGRA8   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 34
+   en PV.ClsDb.Parametro(String nombre, String valor) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 313
+   en PV.BL.ClsSeguridad.cargarRolUsuario(String idUsuario) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 121
+   en PV.Vistas.FrmRolUsuario.FrmRolUsuario_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\seguridad\FrmRolUsuario.cs:línea 27
+
+   09/02/2017 9:10:51      MCTIPROGRA8   Procedure or function 'SpAsignarDesasignarRol' expects parameter '@PidUsuario', which was not supplied.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsSeguridad.asignarDesasignarRol(String idUsuario, String idRol, String acceso) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsSeguridad.cs:línea 133
+   en PV.Vistas.FrmRolUsuario.btnGrabar_Click(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\seguridad\FrmRolUsuario.cs:línea 43
+
+   09/02/2017 15:10:55      MCTIPROGRA8   Could not find stored procedure 'SpStipoVehiculo'.   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\Sistemas San Diego\PV\PV\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsTipoVehiculo.seleccionar(String criterio) en C:\Sistemas San Diego\PV\PV\PV\BL\ClsTipoVehiculo.cs:línea 35
+   en PV.Vistas.frmTipoVehiculo.buscar() en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 44
+   en PV.Vistas.frmTipoVehiculo.frmTipoVehiculo_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 26
+
