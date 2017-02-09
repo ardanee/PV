@@ -10,12 +10,13 @@ namespace PV
 {
     static class ClsHelper
     {
-        public static string usuario = string.Empty;
+       
         public static void erroLog(Exception Err)
         {
+            string usuario;
             try
             {
-
+                usuario = ClsGlobals.usuario;
                 using (StreamWriter log = new StreamWriter("Error.log", true))
                 {
                     log.WriteLine("   " + DateTime.Now.ToString() + "   " + usuario + "   " + Environment.MachineName + "   " + Err.Message + "   " + Err.TargetSite.Name + "   " + Err.StackTrace);

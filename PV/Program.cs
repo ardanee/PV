@@ -16,7 +16,7 @@ namespace PV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PV.Vistas.FrmUsuario());
+            Application.Run(new PV.Vistas.frmTipoVehiculo());
         }
     }
 }
