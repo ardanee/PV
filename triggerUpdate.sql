@@ -13,3 +13,6 @@ BEGIN
 	fechaModificacion = getdate()
 	FROM TblPago a INNER JOIN  inserted I  ON    a.idPago = i.idPago
 END
+
+
+Hello word!!!
