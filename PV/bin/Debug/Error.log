@@ -59,3 +59,16 @@
    en PV.Vistas.frmTipoVehiculo.buscar() en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 44
    en PV.Vistas.frmTipoVehiculo.frmTipoVehiculo_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 26
 
+   12/02/2017 11:21:48      SOPORTE-PC   Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server)   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PV\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsTipoVehiculo.seleccionar(String criterio) en c:\Users\Soporte\Documents\GitHub\PV\PV\BL\ClsTipoVehiculo.cs:línea 35
+   en PV.Vistas.frmTipoVehiculo.buscar() en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 44
+   en PV.Vistas.frmTipoVehiculo.frmTipoVehiculo_Load(Object sender, EventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 26
+
+   12/02/2017 16:22:55      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarca.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarca.cs:línea 86
+
+   12/02/2017 16:24:02      SOPORTE-PC   No se encontró el procedimiento almacenado 'SpdMarca'.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en c:\Users\Soporte\Documents\GitHub\PV\PV\DB\ClsDb.cs:línea 287
+   en PV.BL.ClsMarcaVehiculo.eliminar(String idMarca) en c:\Users\Soporte\Documents\GitHub\PV\PV\BL\ClsMarcaVehiculo.cs:línea 51
+   en PV.Vistas.maestros.frmMarca.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarca.cs:línea 93
+
