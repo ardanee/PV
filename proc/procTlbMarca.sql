@@ -33,7 +33,7 @@ AS
 BEGIN
 SELECT idMarca,nombre
 	FROM TblMarca
-	WHERE nombre like '%'+ISNULL(@Pcriterio,nombre)+'%'
+	WHERE nombre like '%'+ISNULL(@Pcriterio,nombre)+'%' order by nombre ASC
 END;
 go
  

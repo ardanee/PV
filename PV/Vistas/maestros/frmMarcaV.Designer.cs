@@ -309,10 +309,10 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.BackgroundImage = global::PV.Properties.Resources.Advertising_48px;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 3);
+            this.pictureBox1.BackgroundImage = global::PV.Properties.Resources.Lamborghini_48px;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 47);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
