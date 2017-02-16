@@ -50,3 +50,4 @@ C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.csproj.GenerateResource.Cac
 C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.exe.licenses
 C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.exe
 C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.pdb
+C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.maestros.frmMarcaV.resources
