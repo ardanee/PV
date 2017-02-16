@@ -30,7 +30,7 @@ namespace PV.Vistas
                 ClsHelper.erroLog(ex);
             }
         }
-
+         
         private void buscar()
         {
             try
