@@ -112,7 +112,6 @@ namespace PV.Vistas.maestros
         {
             try
             {
-                MessageBox.Show("idLinea: " + idLinea);
                 this.clsLinea.grabarModificar(idLinea, txtNombre.Text.Trim(),cmbMarca.SelectedValue.ToString());
                 limpiarControles();
                 ClsHelper.MensajeSistema("Proceso ejecutado exitosamente");

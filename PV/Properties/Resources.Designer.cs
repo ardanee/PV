@@ -93,6 +93,16 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Close_Window_24px {
+            get {
+                object obj = ResourceManager.GetObject("Close Window_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);
@@ -153,6 +163,16 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Right_Squared_24px {
+            get {
+                object obj = ResourceManager.GetObject("Right Squared_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Save_as_24px {
             get {
                 object obj = ResourceManager.GetObject("Save as_24px", resourceCulture);
@@ -166,6 +186,16 @@ namespace PV.Properties {
         internal static System.Drawing.Bitmap Search_24px {
             get {
                 object obj = ResourceManager.GetObject("Search_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Traffic_Jam_48px {
+            get {
+                object obj = ResourceManager.GetObject("Traffic Jam_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
