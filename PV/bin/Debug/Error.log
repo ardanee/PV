@@ -59,3 +59,27 @@
    en PV.Vistas.frmTipoVehiculo.buscar() en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 44
    en PV.Vistas.frmTipoVehiculo.frmTipoVehiculo_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 26
 
+   16/02/2017 9:47:59      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:02:24      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:04:31      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:04:41      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:05:13      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:05:50      SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   grdExistentes_CellClick      en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:06:05      SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   grdExistentes_CellClick      en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 81
+
