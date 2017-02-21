@@ -53,3 +53,6 @@ C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.pdb
 C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.maestros.frmMarcaV.resources
 C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.maestros.frmLinea.resources
 C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.maestros.frmIngresoVehiculo.resources
+C:\gitRepos\PV\PV\PV\bin\Debug\PV.exe.config
+C:\gitRepos\PV\PV\PV\obj\Debug\PV.exe
+C:\gitRepos\PV\PV\PV\obj\Debug\PV.pdb

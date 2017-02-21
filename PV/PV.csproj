@@ -88,6 +88,18 @@
     <Compile Include="Vistas\maestros\frmMarcaV.Designer.cs">
       <DependentUpon>frmMarcaV.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\movimientos\FrmNuevoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmNuevoPago.Designer.cs">
+      <DependentUpon>FrmNuevoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\movimientos\FrmPago.Designer.cs">
+      <DependentUpon>FrmPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\seguridad\FrmNuevoRol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +153,12 @@
     <EmbeddedResource Include="Vistas\maestros\frmMarcaV.resx">
       <DependentUpon>frmMarcaV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\movimientos\FrmNuevoPago.resx">
+      <DependentUpon>FrmNuevoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\movimientos\FrmPago.resx">
+      <DependentUpon>FrmPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\seguridad\FrmNuevoRol.resx">
       <DependentUpon>FrmNuevoRol.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,7 +190,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reportes\" />
-    <Folder Include="Vistas\movimientos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pencil.png" />
