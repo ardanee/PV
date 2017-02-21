@@ -28,7 +28,7 @@ namespace PV.Vistas.maestros
             cargarComboMarca();
             //cmbMarca.Items.Insert(0, "Por favor seleccione un valor...");
             //cmbMarca.SelectedIndex = 0;
-            buscar();
+            this.buscar();
         }
 
         private void buscar()
@@ -66,9 +66,7 @@ namespace PV.Vistas.maestros
             combo.DataSource = dicTipoVehiculo.ToArray();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-        }
+        
 
         public void cmbMarca_selected_item(object sender, EventArgs e)
         {
