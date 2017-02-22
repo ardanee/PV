@@ -1,58 +1,23 @@
-C:\Sistemas San Diego\PV\PV\PV\bin\Debug\PV.exe.config
-C:\Sistemas San Diego\PV\PV\PV\bin\Debug\PV.exe
-C:\Sistemas San Diego\PV\PV\PV\bin\Debug\PV.pdb
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.Form1.resources
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.Properties.Resources.resources
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.csproj.GenerateResource.Cache
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.exe
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.pdb
-C:\Sistemas San Diego\PV\PV\PV\bin\Debug\ClosedXML.dll
-C:\Sistemas San Diego\PV\PV\PV\bin\Debug\DocumentFormat.OpenXml.dll
-C:\Sistemas San Diego\PV\PV\PV\bin\Debug\ClosedXML.pdb
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.FrmRol.resources
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.Vistas.FrmNuevoRol.resources
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.Vistas.FrmUsuario.resources
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.exe.licenses
-D:\github\PV\PV\bin\Debug\PV.exe.config
-D:\github\PV\PV\obj\Debug\PV.exe
-D:\github\PV\PV\obj\Debug\PV.pdb
-D:\github\PV\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache
-D:\github\PV\PV\obj\Debug\PV.Form1.resources
-D:\github\PV\PV\obj\Debug\PV.Properties.Resources.resources
-D:\github\PV\PV\obj\Debug\PV.Vistas.FrmNuevoRol.resources
-D:\github\PV\PV\obj\Debug\PV.FrmRol.resources
-D:\github\PV\PV\obj\Debug\PV.Vistas.FrmUsuario.resources
-D:\github\PV\PV\obj\Debug\PV.csproj.GenerateResource.Cache
-D:\github\PV\PV\obj\Debug\PV.exe.licenses
-D:\github\PV\PV\bin\Debug\PV.exe
-D:\github\PV\PV\bin\Debug\PV.pdb
-D:\github\PV\PV\bin\Debug\ClosedXML.dll
-D:\github\PV\PV\bin\Debug\DocumentFormat.OpenXml.dll
-D:\github\PV\PV\bin\Debug\ClosedXML.pdb
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.Vistas.FrmRolUsuario.resources
-C:\Sistemas San Diego\PV\PV\PV\obj\Debug\PV.Vistas.frmTipoVehiculo.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\bin\Debug\PV.exe.config
-C:\Users\Soporte\Documents\GitHub\PV\PV\bin\Debug\PV.exe
-C:\Users\Soporte\Documents\GitHub\PV\PV\bin\Debug\PV.pdb
-C:\Users\Soporte\Documents\GitHub\PV\PV\bin\Debug\ClosedXML.dll
-C:\Users\Soporte\Documents\GitHub\PV\PV\bin\Debug\DocumentFormat.OpenXml.dll
-C:\Users\Soporte\Documents\GitHub\PV\PV\bin\Debug\ClosedXML.pdb
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Form1.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Properties.Resources.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.FrmNuevoRol.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.FrmRol.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.FrmRolUsuario.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.FrmUsuario.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.frmTipoVehiculo.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.csproj.GenerateResource.Cache
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.exe.licenses
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.exe
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.pdb
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.maestros.frmMarcaV.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.maestros.frmLinea.resources
-C:\Users\Soporte\Documents\GitHub\PV\PV\obj\Debug\PV.Vistas.maestros.frmIngresoVehiculo.resources
-C:\gitRepos\PV\PV\PV\bin\Debug\PV.exe.config
-C:\gitRepos\PV\PV\PV\obj\Debug\PV.exe
-C:\gitRepos\PV\PV\PV\obj\Debug\PV.pdb
+D:\github\PV\PV\PV\bin\Debug\PV.exe.config
+D:\github\PV\PV\PV\obj\Debug\PV.exe
+D:\github\PV\PV\PV\obj\Debug\PV.pdb
+D:\github\PV\PV\PV\bin\Debug\PV.exe
+D:\github\PV\PV\PV\bin\Debug\PV.pdb
+D:\github\PV\PV\PV\bin\Debug\ClosedXML.dll
+D:\github\PV\PV\PV\bin\Debug\DocumentFormat.OpenXml.dll
+D:\github\PV\PV\PV\bin\Debug\ClosedXML.pdb
+D:\github\PV\PV\PV\obj\Debug\PV.csprojResolveAssemblyReference.cache
+D:\github\PV\PV\PV\obj\Debug\PV.Form1.resources
+D:\github\PV\PV\PV\obj\Debug\PV.Properties.Resources.resources
+D:\github\PV\PV\PV\obj\Debug\PV.Vistas.maestros.frmIngresoVehiculo.resources
+D:\github\PV\PV\PV\obj\Debug\PV.Vistas.maestros.frmLinea.resources
+D:\github\PV\PV\PV\obj\Debug\PV.Vistas.maestros.frmMarcaV.resources
+D:\github\PV\PV\PV\obj\Debug\PV.FrmNuevoPago.resources
+D:\github\PV\PV\PV\obj\Debug\PV.FrmPago.resources
+D:\github\PV\PV\PV\obj\Debug\PV.Vistas.FrmNuevoRol.resources
+D:\github\PV\PV\PV\obj\Debug\PV.FrmRol.resources
+D:\github\PV\PV\PV\obj\Debug\PV.Vistas.FrmRolUsuario.resources
+D:\github\PV\PV\PV\obj\Debug\PV.Vistas.FrmUsuario.resources
+D:\github\PV\PV\PV\obj\Debug\PV.Vistas.frmTipoVehiculo.resources
+D:\github\PV\PV\PV\obj\Debug\PV.csproj.GenerateResource.Cache
+D:\github\PV\PV\PV\obj\Debug\PV.exe.licenses

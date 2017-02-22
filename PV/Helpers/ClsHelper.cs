@@ -10,7 +10,7 @@ namespace PV
 {
     static class ClsHelper
     {
-       
+
         public static void erroLog(Exception Err)
         {
             string usuario;
@@ -42,7 +42,8 @@ namespace PV
             Boolean res = true;
             try
             {
-                if (string.IsNullOrEmpty(field.Text.Replace(field.Culture.DateTimeFormat.DateSeparator, "").Replace(field.Culture.DateTimeFormat.TimeSeparator, "").Trim())) {
+                if (string.IsNullOrEmpty(field.Text.Replace(field.Culture.DateTimeFormat.DateSeparator, "").Replace(field.Culture.DateTimeFormat.TimeSeparator, "").Trim()))
+                {
                     res = false;
                 }
             }
@@ -128,7 +129,8 @@ namespace PV
             return res;
         }
 
-        public static void exportarExcel(string ruta) {
+        public static void exportarExcel(string ruta)
+        {
             try
             {
 
@@ -140,9 +142,13 @@ namespace PV
         {
             DateTime Temp;
             return (DateTime.TryParse(date, out Temp) && date.Length >= 10);
-    }
+        }
 
-
+        public static bool IsNumeric(this string s)
+        {
+            float output;
+            return float.TryParse(s, out output);
+        }
 
 
     }

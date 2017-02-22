@@ -57,6 +57,8 @@
   <ItemGroup>
     <Compile Include="BL\ClsLinea.cs" />
     <Compile Include="BL\ClsMarcaV.cs" />
+    <Compile Include="BL\ClsMetodoPago.cs" />
+    <Compile Include="BL\ClsPago.cs" />
     <Compile Include="BL\ClsSeguridad.cs" />
     <Compile Include="BL\ClsTipoVehiculo.cs" />
     <Compile Include="DB\ClsDb.cs" />
@@ -232,6 +234,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close Window_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accounting_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash In Hand_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Todo List_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attach_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No Cash_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
