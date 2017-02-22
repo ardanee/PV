@@ -83,3 +83,42 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
 
    16/02/2017 10:06:05      SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   grdExistentes_CellClick      en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 81
 
+   21/02/2017 21:54:28      KKROT-PC   No se puede borrar esta lista.   System.Collections.IList.Clear      en System.Data.DataView.System.Collections.IList.Clear()
+   en System.Windows.Forms.DataGridViewRowCollection.Clear()
+   en PV.FrmPago.cargarListaPagos() en D:\github\PV\PV\PV\Vistas\movimientos\FrmPago.cs:línea 75
+
+   22/02/2017 00:47:04      KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring)
+   en PV.ClsDb.Parametro(String nombre, String valor)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 00:48:01      KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring)
+   en PV.ClsDb.Parametro(String nombre, String valor)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 00:52:23      KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   fNull      en PV.ClsDb.fNull(String xstring)
+   en PV.ClsDb.Parametro(String nombre, String valor)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:05:26      KKROT-PC   El procedimiento o la función 'SpGrabarPago' esperaba el parámetro '@Pusuario', que no se ha especificado.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:07:09      KKROT-PC   Error al convertir una cadena de caracteres en fecha y/u hora.   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:14:42      KKROT-PC   El pago debe ser un número positivo   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:15:54      KKROT-PC   El pago debe estar entre Q1.00 y 1733.33 Para completar la cuota pendiente   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+
+   22/02/2017 01:17:06      KKROT-PC   El pago debe ser un número positivo   ejecutarSP      en PV.ClsDb.ejecutarSP(String spNombre, SqlConnection cn, SqlParameter[] arrParam)
+   en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
+   en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
+

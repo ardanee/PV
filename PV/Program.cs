@@ -16,7 +16,7 @@ namespace PV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PV.Vistas.maestros.frmIngresoVehiculo());
+            Application.Run(new PV.FrmPago());
         }
     }
 }
