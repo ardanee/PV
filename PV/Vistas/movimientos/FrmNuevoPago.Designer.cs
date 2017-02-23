@@ -62,10 +62,11 @@
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
-            this.btnAdjuntar = new System.Windows.Forms.Button();
-            this.btnGrabar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cboMetodoPago = new System.Windows.Forms.ComboBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnGrabar = new System.Windows.Forms.Button();
+            this.btnAdjuntar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -425,7 +426,7 @@
             // txtMonto
             // 
             this.txtMonto.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonto.Location = new System.Drawing.Point(258, 317);
+            this.txtMonto.Location = new System.Drawing.Point(219, 317);
             this.txtMonto.MaxLength = 50;
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(99, 27);
@@ -435,7 +436,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(258, 300);
+            this.label3.Location = new System.Drawing.Point(219, 300);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 16);
             this.label3.TabIndex = 55;
@@ -444,32 +445,55 @@
             // txtObservaciones
             // 
             this.txtObservaciones.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservaciones.Location = new System.Drawing.Point(258, 402);
+            this.txtObservaciones.Location = new System.Drawing.Point(219, 402);
             this.txtObservaciones.MaxLength = 50;
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtObservaciones.Size = new System.Drawing.Size(214, 66);
+            this.txtObservaciones.Size = new System.Drawing.Size(326, 66);
             this.txtObservaciones.TabIndex = 56;
             // 
-            // btnAdjuntar
+            // label5
             // 
-            this.btnAdjuntar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAdjuntar.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnAdjuntar.FlatAppearance.BorderSize = 0;
-            this.btnAdjuntar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnAdjuntar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnAdjuntar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdjuntar.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAdjuntar.ForeColor = System.Drawing.Color.White;
-            this.btnAdjuntar.Image = global::PV.Properties.Resources.Attach_24px;
-            this.btnAdjuntar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdjuntar.Location = new System.Drawing.Point(363, 317);
-            this.btnAdjuntar.Name = "btnAdjuntar";
-            this.btnAdjuntar.Size = new System.Drawing.Size(109, 27);
-            this.btnAdjuntar.TabIndex = 57;
-            this.btnAdjuntar.Text = "Adjuntar";
-            this.btnAdjuntar.UseVisualStyleBackColor = false;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(219, 351);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 16);
+            this.label5.TabIndex = 59;
+            this.label5.Text = "Método de pago";
+            // 
+            // cboMetodoPago
+            // 
+            this.cboMetodoPago.BackColor = System.Drawing.Color.White;
+            this.cboMetodoPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMetodoPago.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboMetodoPago.FormattingEnabled = true;
+            this.cboMetodoPago.Location = new System.Drawing.Point(219, 368);
+            this.cboMetodoPago.Name = "cboMetodoPago";
+            this.cboMetodoPago.Size = new System.Drawing.Size(326, 27);
+            this.cboMetodoPago.TabIndex = 60;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnImprimir.Enabled = false;
+            this.btnImprimir.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnImprimir.FlatAppearance.BorderSize = 0;
+            this.btnImprimir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnImprimir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImprimir.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
+            this.btnImprimir.ForeColor = System.Drawing.Color.White;
+            this.btnImprimir.Image = global::PV.Properties.Resources.Print_24px;
+            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnImprimir.Location = new System.Drawing.Point(436, 317);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(109, 27);
+            this.btnImprimir.TabIndex = 61;
+            this.btnImprimir.Text = "Recibo";
+            this.btnImprimir.UseVisualStyleBackColor = false;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnGrabar
             // 
@@ -483,7 +507,7 @@
             this.btnGrabar.ForeColor = System.Drawing.Color.White;
             this.btnGrabar.Image = global::PV.Properties.Resources.Save_as_24px;
             this.btnGrabar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGrabar.Location = new System.Drawing.Point(258, 472);
+            this.btnGrabar.Location = new System.Drawing.Point(274, 472);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(214, 27);
             this.btnGrabar.TabIndex = 58;
@@ -491,26 +515,24 @@
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
-            // label5
+            // btnAdjuntar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(258, 351);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 16);
-            this.label5.TabIndex = 59;
-            this.label5.Text = "Método de pago";
-            // 
-            // cboMetodoPago
-            // 
-            this.cboMetodoPago.BackColor = System.Drawing.Color.White;
-            this.cboMetodoPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMetodoPago.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboMetodoPago.FormattingEnabled = true;
-            this.cboMetodoPago.Location = new System.Drawing.Point(258, 368);
-            this.cboMetodoPago.Name = "cboMetodoPago";
-            this.cboMetodoPago.Size = new System.Drawing.Size(214, 27);
-            this.cboMetodoPago.TabIndex = 60;
+            this.btnAdjuntar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAdjuntar.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnAdjuntar.FlatAppearance.BorderSize = 0;
+            this.btnAdjuntar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnAdjuntar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnAdjuntar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdjuntar.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAdjuntar.ForeColor = System.Drawing.Color.White;
+            this.btnAdjuntar.Image = global::PV.Properties.Resources.Attach_24px;
+            this.btnAdjuntar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdjuntar.Location = new System.Drawing.Point(324, 317);
+            this.btnAdjuntar.Name = "btnAdjuntar";
+            this.btnAdjuntar.Size = new System.Drawing.Size(109, 27);
+            this.btnAdjuntar.TabIndex = 57;
+            this.btnAdjuntar.Text = "Adjuntar";
+            this.btnAdjuntar.UseVisualStyleBackColor = false;
             // 
             // FrmNuevoPago
             // 
@@ -518,6 +540,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(768, 502);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.cboMetodoPago);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnGrabar);
@@ -604,5 +627,6 @@
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cboMetodoPago;
+        private System.Windows.Forms.Button btnImprimir;
     }
 }

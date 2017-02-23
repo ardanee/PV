@@ -26,6 +26,10 @@ namespace PV
         {
             try
             {
+                //BORRAR
+                ClsGlobals.usuario = "aramirez";
+                    //BORRAR 
+
                 cboMetodoPago.DataSource = ClsMetodoPago.SeleccionarMetodoPago();
                 cboMetodoPago.ValueMember = "idMetodoPago";
                 cboMetodoPago.DisplayMember = "nombre";
@@ -97,6 +101,7 @@ namespace PV
                 ClsPago.grabarPago(this.idVenta.ToString(), txtMonto.Text, cboMetodoPago.SelectedValue.ToString(), txtObservaciones.Text, adjunto);
                 ClsHelper.MensajeSistema("Pago registrado con éxito");
                 limpiarControles();
+                btnImprimir.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -119,6 +124,22 @@ namespace PV
             {
 
                 throw;
+            }
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BL.ClsReportes ClsReportes = new BL.ClsReportes();
+                DataTable dt = new DataTable();
+                FrmReporte frm = new FrmReporte();
+                dt = ClsReportes.rptRecibos();
+                frm.cargarReporte("RptRecibo", dt);
+            }
+            catch (Exception ex)
+            {
+                ClsHelper.erroLog(ex);
             }
         }
     }
