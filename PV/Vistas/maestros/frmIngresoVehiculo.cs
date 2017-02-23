@@ -17,11 +17,29 @@ namespace PV.Vistas.maestros
             InitializeComponent();
             cargarComboTipoVehiculo();
             this.cargarComboTipoVehiculo();
+            this.cargarComboMarca();
+            this.cargarComboLinea();
         }
 
         public void frmIngresoVehiculo_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void mbMarca_selected_item(object sender, EventArgs e)
+        {
+            if (Int32.Parse(cmbMarca.SelectedValue.ToString()) > 0)
+            {
+                this.cmbLinea.Enabled = true;
+                this.cargarComboLinea();
+                //MessageBox.Show("ID marca: " + cmbMarca.SelectedValue.ToString());
+                //this.txtNombre.Enabled = true;
+                //this.txtNombre.Focus();
+            }
+            else
+            {
+                //limpiarControles();
+            }
         }
 
         private void tabControler_Selecting(object sender, TabControlCancelEventArgs e)
@@ -34,17 +52,26 @@ namespace PV.Vistas.maestros
 
         private void cargarComboTipoVehiculo()
         {
-            BL.ClsTipoVehiculo clsMarca = new BL.ClsTipoVehiculo();
-            //DataTable dt = clsMarca.seleccionar("");
-            //cargarCombos(clsMarca.seleccionar(""), cmbTipoVehiculo,"tipo de vehiculo");
+            BL.ClsTipoVehiculo clsTipoVehiculo = new BL.ClsTipoVehiculo();
+            //DataTable dt = clsTipoVehiculo.seleccionar("");
+            cargarCombos(clsTipoVehiculo.seleccionar(""), cmbTipoVehiculo, "tipo de vehiculo");
         }
+
+       
 
 
         private void cargarComboMarca()
         {
-            //BL.ClsMarcaV clsMarca = new BL.ClsMarcaV();
+           BL.ClsMarcaV clsMarca = new BL.ClsMarcaV();
             //DataTable dt = clsMarca.seleccionar("");
-            //cargarCombos(clsMarca.seleccionar(""), cmbMarca,"marca");
+            cargarCombos(clsMarca.seleccionar(""), cmbMarca,"una marca");
+        }
+
+        private void cargarComboLinea()
+        {
+            
+            BL.ClsLinea clsLinea = new BL.ClsLinea();
+            cargarCombos(clsLinea.seleccionarLineaMarca(cmbMarca.SelectedValue.ToString()),this.cmbLinea,"una Linea");
         }
 
         private void cargarCombos(DataTable dataTable, ComboBox combo, string extra)
@@ -59,6 +86,8 @@ namespace PV.Vistas.maestros
             combo.ValueMember = "Key";
             combo.DataSource = dicTipoVehiculo.ToArray();
         }
+
+      
 
         
 

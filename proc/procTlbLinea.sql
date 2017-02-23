@@ -26,7 +26,7 @@ go
 
 
  go
--- Procedimiento para seleccionar tabla marca
+-- Procedimiento para seleccionar en tabla marca
 IF OBJECT_ID('DBPV.SpsLinea', 'P') IS NOT NULL
 	DROP PROCEDURE dbpv.SpsMarca;
 GO
@@ -45,7 +45,7 @@ go
  
  
  go
--- PROCEDIMIENTO PARA ELIMINAR  TABLA MARCA
+-- PROCEDIMIENTO PARA ELIMINAR EN TABLA MARCA
 CREATE PROCEDURE [DBO].[SpdLinea]
 	@PidLinea int
 AS
@@ -59,5 +59,21 @@ BEGIN
 	BEGIN
 		DELETE TblLinea WHERE idLinea = @PidLinea
 	END
+END;
+go
+
+
+
+-- PROCEDIMIENTO PARA SELECCIONAR LINEAS DE UNA MARCA
+go
+create procedure SpSLineaMarca
+	@idMarca int
+AS 
+BEGIN
+	SELECT tbLinea.idLinea as idLinea,tbLinea.nombre as linea, tbMarca.nombre as marca, tbMarca.idMarca as idMarca
+	 FROM TblLinea as tbLinea
+	 JOIN TblMarca as tbMarca
+	 ON tbLinea.idMarca = tbMarca.idMarca
+	 WHERE tbLinea.idMarca = @idMarca order by tbLinea.nombre ASC 
 END;
 go
