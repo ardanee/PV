@@ -134,6 +134,19 @@ namespace PV.BL
             }
         }
 
+        public DataTable login(String usuario, String contrasena)
+        {
+            try
+            {
+                return consultarTabla("SpLogin", null, Parametro("@Pusuario", usuario), Parametro("@Pcontrasena", contrasena));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
 
     }
 }

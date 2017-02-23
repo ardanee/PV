@@ -122,3 +122,7 @@ Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGr
    en PV.BL.ClsPago.grabarPago(String idVenta, String monto, String idMetodoPago, String observaciones, String rutaAdjunto)
    en PV.FrmNuevoPago.btnGrabar_Click(Object sender, EventArgs e)
 
+   23/02/2017 11:54:08      MCTIPROGRA8   Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)   consultarTabla      en PV.ClsDb.consultarTabla(String spNombre, SqlConnection cn, SqlParameter[] arrParam) en C:\gitRepos\PV\PV\PV\DB\ClsDb.cs:línea 187
+   en PV.BL.ClsPago.buscarVentaEncabezado(String criterio) en C:\gitRepos\PV\PV\PV\BL\ClsPago.cs:línea 23
+   en PV.FrmPago.btnBuscar_Click(Object sender, EventArgs e) en C:\gitRepos\PV\PV\PV\Vistas\movimientos\FrmPago.cs:línea 30
+

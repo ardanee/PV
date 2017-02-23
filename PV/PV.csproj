@@ -66,7 +66,10 @@
     <Compile Include="BL\ClsSeguridad.cs" />
     <Compile Include="BL\ClsTipoVehiculo.cs" />
     <Compile Include="DB\ClsDb.cs" />
-    <Compile Include="DtsRecibo.Designer.cs">
+    <Compile Include="Reportes\DtsRecibo.cs">
+      <DependentUpon>DtsRecibo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DtsRecibo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DtsRecibo.xsd</DependentUpon>
@@ -116,6 +119,18 @@
     </Compile>
     <Compile Include="Vistas\movimientos\FrmPago.Designer.cs">
       <DependentUpon>FrmPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\seguridad\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\seguridad\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\seguridad\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\seguridad\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\seguridad\FrmNuevoRol.cs">
       <SubType>Form</SubType>
@@ -180,6 +195,12 @@
     <EmbeddedResource Include="Vistas\movimientos\FrmPago.resx">
       <DependentUpon>FrmPago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\seguridad\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\seguridad\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\seguridad\FrmNuevoRol.resx">
       <DependentUpon>FrmNuevoRol.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,15 +216,15 @@
     <EmbeddedResource Include="Vistas\maestros\frmTipoVehiculo.resx">
       <DependentUpon>frmTipoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DtsRecibo.xsc">
+    <None Include="Reportes\DtsRecibo.xsc">
       <DependentUpon>DtsRecibo.xsd</DependentUpon>
     </None>
-    <None Include="DtsRecibo.xsd">
+    <None Include="Reportes\DtsRecibo.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DtsRecibo.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DtsRecibo.xss">
+    <None Include="Reportes\DtsRecibo.xss">
       <DependentUpon>DtsRecibo.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
