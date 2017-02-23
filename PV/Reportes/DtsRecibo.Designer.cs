@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace PV {
+namespace PV.Reportes {
     
     
     /// <summary>
@@ -897,7 +897,7 @@ namespace PV {
         }
     }
 }
-namespace PV.DtsReciboTableAdapters {
+namespace PV.Reportes.DtsReciboTableAdapters {
     
     
     /// <summary>
