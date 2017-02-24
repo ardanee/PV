@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,7 +64,7 @@ namespace PV
                         }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ClsHelper.erroLog(ex);
             }
@@ -107,6 +108,55 @@ namespace PV
             {
 
                 throw;
+            }
+        }
+
+        private void grdPago_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                switch (e.ColumnIndex)
+                {
+                    case 0:
+                        {//Muestra el archivo adjunto
+                            String rutaAdjunto = grdPago.SelectedRows[0].Cells["rutaAdjuntoCol"].Value.ToString();
+                            if (String.IsNullOrEmpty(rutaAdjunto))
+                            {
+                                ClsHelper.MensajeSistema("No hay archivo adjunto para mostrar");
+                                return;
+                            }
+                            if (!File.Exists(rutaAdjunto))
+                            {
+                                ClsHelper.MensajeSistema("No existe el archivo o no tiene acceso a él");
+                                return;
+                            }
+                            System.Diagnostics.Process.Start(rutaAdjunto);
+                            break;
+                        }
+                    case 1:
+                        {//anula pago
+                            BL.ClsPago ClsPago = new BL.ClsPago();
+                            if (MessageBox.Show("¿Confirma que desea anular este pago?" + Environment.NewLine + "Quedará registro de esta accion", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
+                            {
+                                return;
+                            }
+                            try
+                            {
+                                ClsPago.anularPago(grdPago.SelectedRows[0].Cells["idPagoCol"].Value.ToString());
+                            }
+                            catch (Exception ms)
+                            {//Excepción propia porque la consulta devuelve raiserror
+                                ClsHelper.MensajeSistema(ms.Message);
+                            }
+                            cargarListaPagos();
+                            break;
+                        }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ClsHelper.erroLog(ex);
             }
         }
 

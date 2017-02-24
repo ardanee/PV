@@ -41,10 +41,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.grdVenta = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.grdPago = new System.Windows.Forms.DataGridView();
-            this.lblTituloVenta = new System.Windows.Forms.Label();
             this.verPagosCol = new System.Windows.Forms.DataGridViewImageColumn();
             this.estadoCuentaCol = new System.Windows.Forms.DataGridViewImageColumn();
             this.nuevoPagoCol = new System.Windows.Forms.DataGridViewImageColumn();
@@ -52,6 +48,9 @@
             this.nombreCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonosCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vehiculoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.grdPago = new System.Windows.Forms.DataGridView();
             this.adjuntoCol = new System.Windows.Forms.DataGridViewImageColumn();
             this.anularCol = new System.Windows.Forms.DataGridViewImageColumn();
             this.idPagoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +60,7 @@
             this.metodoPagoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rutaAdjuntoCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioCreacionCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblTituloVenta = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdPago)).BeginInit();
             this.SuspendLayout();
@@ -156,6 +156,60 @@
             this.grdVenta.TabIndex = 4;
             this.grdVenta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdVenta_CellClick);
             // 
+            // verPagosCol
+            // 
+            this.verPagosCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.verPagosCol.FillWeight = 304.5685F;
+            this.verPagosCol.HeaderText = "Ver Pagos";
+            this.verPagosCol.Image = global::PV.Properties.Resources.Todo_List_24px;
+            this.verPagosCol.Name = "verPagosCol";
+            this.verPagosCol.Width = 75;
+            // 
+            // estadoCuentaCol
+            // 
+            this.estadoCuentaCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.estadoCuentaCol.FillWeight = 59.08629F;
+            this.estadoCuentaCol.HeaderText = "Estado de Cuenta";
+            this.estadoCuentaCol.Image = global::PV.Properties.Resources.Accounting_24px;
+            this.estadoCuentaCol.Name = "estadoCuentaCol";
+            this.estadoCuentaCol.Width = 90;
+            // 
+            // nuevoPagoCol
+            // 
+            this.nuevoPagoCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.nuevoPagoCol.FillWeight = 59.08629F;
+            this.nuevoPagoCol.HeaderText = "Nuevo Pago";
+            this.nuevoPagoCol.Image = global::PV.Properties.Resources.Cash_In_Hand_24px;
+            this.nuevoPagoCol.Name = "nuevoPagoCol";
+            this.nuevoPagoCol.Width = 75;
+            // 
+            // idVentaCol
+            // 
+            this.idVentaCol.DataPropertyName = "idVenta";
+            this.idVentaCol.HeaderText = "idVenta";
+            this.idVentaCol.Name = "idVentaCol";
+            this.idVentaCol.Visible = false;
+            // 
+            // nombreCol
+            // 
+            this.nombreCol.DataPropertyName = "nombre";
+            this.nombreCol.FillWeight = 59.08629F;
+            this.nombreCol.HeaderText = "Cliente";
+            this.nombreCol.Name = "nombreCol";
+            // 
+            // telefonosCol
+            // 
+            this.telefonosCol.FillWeight = 59.08629F;
+            this.telefonosCol.HeaderText = "Teléfonos";
+            this.telefonosCol.Name = "telefonosCol";
+            // 
+            // vehiculoCol
+            // 
+            this.vehiculoCol.DataPropertyName = "vehiculo";
+            this.vehiculoCol.FillWeight = 59.08629F;
+            this.vehiculoCol.HeaderText = "Vehículo";
+            this.vehiculoCol.Name = "vehiculoCol";
+            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -245,74 +299,7 @@
             this.grdPago.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdPago.Size = new System.Drawing.Size(998, 190);
             this.grdPago.TabIndex = 13;
-            // 
-            // lblTituloVenta
-            // 
-            this.lblTituloVenta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTituloVenta.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.lblTituloVenta.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
-            this.lblTituloVenta.ForeColor = System.Drawing.Color.White;
-            this.lblTituloVenta.Location = new System.Drawing.Point(-2, 275);
-            this.lblTituloVenta.Name = "lblTituloVenta";
-            this.lblTituloVenta.Size = new System.Drawing.Size(1007, 34);
-            this.lblTituloVenta.TabIndex = 14;
-            this.lblTituloVenta.Text = "Lista de pagos recibidos";
-            this.lblTituloVenta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // verPagosCol
-            // 
-            this.verPagosCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.verPagosCol.FillWeight = 304.5685F;
-            this.verPagosCol.HeaderText = "Ver Pagos";
-            this.verPagosCol.Image = global::PV.Properties.Resources.Todo_List_24px;
-            this.verPagosCol.Name = "verPagosCol";
-            this.verPagosCol.Width = 75;
-            // 
-            // estadoCuentaCol
-            // 
-            this.estadoCuentaCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.estadoCuentaCol.FillWeight = 59.08629F;
-            this.estadoCuentaCol.HeaderText = "Estado de Cuenta";
-            this.estadoCuentaCol.Image = global::PV.Properties.Resources.Accounting_24px;
-            this.estadoCuentaCol.Name = "estadoCuentaCol";
-            this.estadoCuentaCol.Width = 90;
-            // 
-            // nuevoPagoCol
-            // 
-            this.nuevoPagoCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.nuevoPagoCol.FillWeight = 59.08629F;
-            this.nuevoPagoCol.HeaderText = "Nuevo Pago";
-            this.nuevoPagoCol.Image = global::PV.Properties.Resources.Cash_In_Hand_24px;
-            this.nuevoPagoCol.Name = "nuevoPagoCol";
-            this.nuevoPagoCol.Width = 75;
-            // 
-            // idVentaCol
-            // 
-            this.idVentaCol.DataPropertyName = "idVenta";
-            this.idVentaCol.HeaderText = "idVenta";
-            this.idVentaCol.Name = "idVentaCol";
-            this.idVentaCol.Visible = false;
-            // 
-            // nombreCol
-            // 
-            this.nombreCol.DataPropertyName = "nombre";
-            this.nombreCol.FillWeight = 59.08629F;
-            this.nombreCol.HeaderText = "Cliente";
-            this.nombreCol.Name = "nombreCol";
-            // 
-            // telefonosCol
-            // 
-            this.telefonosCol.FillWeight = 59.08629F;
-            this.telefonosCol.HeaderText = "Teléfonos";
-            this.telefonosCol.Name = "telefonosCol";
-            // 
-            // vehiculoCol
-            // 
-            this.vehiculoCol.DataPropertyName = "vehiculo";
-            this.vehiculoCol.FillWeight = 59.08629F;
-            this.vehiculoCol.HeaderText = "Vehículo";
-            this.vehiculoCol.Name = "vehiculoCol";
+            this.grdPago.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPago_CellClick);
             // 
             // adjuntoCol
             // 
@@ -379,6 +366,20 @@
             this.usuarioCreacionCol.FillWeight = 59.21717F;
             this.usuarioCreacionCol.HeaderText = "Operado Por";
             this.usuarioCreacionCol.Name = "usuarioCreacionCol";
+            // 
+            // lblTituloVenta
+            // 
+            this.lblTituloVenta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTituloVenta.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.lblTituloVenta.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTituloVenta.ForeColor = System.Drawing.Color.White;
+            this.lblTituloVenta.Location = new System.Drawing.Point(-2, 275);
+            this.lblTituloVenta.Name = "lblTituloVenta";
+            this.lblTituloVenta.Size = new System.Drawing.Size(1007, 34);
+            this.lblTituloVenta.TabIndex = 14;
+            this.lblTituloVenta.Text = "Lista de pagos recibidos";
+            this.lblTituloVenta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmPago
             // 

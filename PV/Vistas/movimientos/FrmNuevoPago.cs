@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WIA;
+using System.Windows.Media.Imaging;
+
 
 namespace PV
 {
@@ -15,8 +19,8 @@ namespace PV
         private BL.ClsPago ClsPago = new BL.ClsPago();
         private BL.ClsMetodoPago ClsMetodoPago = new BL.ClsMetodoPago();
         public Int32 idVenta;
-        private String adjunto = string.Empty ;
-        
+        private String adjunto = string.Empty;
+
         public FrmNuevoPago()
         {
             InitializeComponent();
@@ -28,7 +32,7 @@ namespace PV
             {
                 //BORRAR
                 //ClsGlobals.usuario = "aramirez";
-                    //BORRAR 
+                //BORRAR 
 
                 cboMetodoPago.DataSource = ClsMetodoPago.SeleccionarMetodoPago();
                 cboMetodoPago.ValueMember = "idMetodoPago";
@@ -58,12 +62,12 @@ namespace PV
                 lblCuotas.Text = dts.Tables[0].Rows[0]["cantidadCuotas"].ToString().PadLeft(2, '0');
                 lblDiaPago.Text = dts.Tables[0].Rows[0]["diaPago"].ToString().PadLeft(2, '0');
 
-                colocarCantidad(dts.Tables[0].Rows[0]["valorVenta"].ToString(), lblPrecioVentaE, lblPrecioVentaD );
+                colocarCantidad(dts.Tables[0].Rows[0]["valorVenta"].ToString(), lblPrecioVentaE, lblPrecioVentaD);
                 colocarCantidad(dts.Tables[0].Rows[0]["enganche"].ToString(), lblEngancheE, lblEngancheD);
                 colocarCantidad(dts.Tables[0].Rows[0]["montoInicial"].ToString(), lblSaldoInicialE, lblSaldoInicialD);
                 colocarCantidad(dts.Tables[0].Rows[0]["saldoActual"].ToString(), lblSaldoActualE, lblSaldoActualD);
                 colocarCantidad(dts.Tables[0].Rows[0]["cuota"].ToString(), lblCuotaE, lblCuotaD);
-                colocarCantidad(dts.Tables[2].Rows.Count>0? dts.Tables[2].Rows[0]["PendienteUltimaCuota"].ToString():"0.00", lblParcialPendienteE, lblParcialPendienteD);
+                colocarCantidad(dts.Tables[2].Rows.Count > 0 ? dts.Tables[2].Rows[0]["PendienteUltimaCuota"].ToString() : "0.00", lblParcialPendienteE, lblParcialPendienteD);
                 lblCuotasAtrasadas.Text = dts.Tables[3].Rows.Count.ToString();
             }
             catch (Exception)
@@ -113,7 +117,8 @@ namespace PV
 
                 ClsHelper.MensajeSistema(ex.Message);
             }
-            finally {
+            finally
+            {
                 limpiarControles();
             }
         }
@@ -126,7 +131,7 @@ namespace PV
                 txtMonto.Clear();
                 txtObservaciones.Clear();
                 cboMetodoPago.SelectedValue = 1;
-                adjunto = string.Empty;                    
+                adjunto = string.Empty;
             }
             catch (Exception)
             {
@@ -144,6 +149,33 @@ namespace PV
                 FrmReporte frm = new FrmReporte();
                 dt = ClsReportes.rptRecibos();
                 frm.cargarReporte("RptRecibo", dt);
+            }
+            catch (Exception ex)
+            {
+                ClsHelper.erroLog(ex);
+            }
+        }
+
+        private void btnAdjuntar_Click(object sender, EventArgs e)
+        {
+            String ruta;
+            try
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.ShowDialog();
+                ruta = sfd.FileName;
+                //saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                //saveFileDialog1.FilterIndex = 2;
+                //saveFileDialog1.RestoreDirectory = true;
+
+                //if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                //{
+                //    if ((myStream = saveFileDialog1.OpenFile()) != null)
+                //    {
+                //        // Code to write the stream goes here.
+                //        myStream.Close();
+                //    }
+                //}
             }
             catch (Exception ex)
             {

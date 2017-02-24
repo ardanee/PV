@@ -438,7 +438,7 @@
             this.label3.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(219, 300);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 16);
+            this.label3.Size = new System.Drawing.Size(47, 14);
             this.label3.TabIndex = 55;
             this.label3.Text = "Monto";
             // 
@@ -459,7 +459,7 @@
             this.label5.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(219, 351);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 16);
+            this.label5.Size = new System.Drawing.Size(109, 14);
             this.label5.TabIndex = 59;
             this.label5.Text = "Método de pago";
             // 
@@ -533,6 +533,7 @@
             this.btnAdjuntar.TabIndex = 1;
             this.btnAdjuntar.Text = "Adjuntar";
             this.btnAdjuntar.UseVisualStyleBackColor = false;
+            this.btnAdjuntar.Click += new System.EventHandler(this.btnAdjuntar_Click);
             // 
             // FrmNuevoPago
             // 
