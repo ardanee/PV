@@ -67,3 +67,7 @@ C:\gitRepos\PV\PV\PV\bin\Debug\ClosedXML.pdb
 C:\gitRepos\PV\PV\PV\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
 C:\gitRepos\PV\PV\PV\obj\Debug\PV.FrmLogin.resources
 C:\gitRepos\PV\PV\PV\obj\Debug\PV.FrmMain.resources
+D:\github\PV\PV\PV\obj\Debug\PV.FrmLogin.resources
+D:\github\PV\PV\PV\obj\Debug\PV.FrmMain.resources
+D:\github\PV\PV\PV\obj\Debug\PV.FrmCambiarContrasena.resources
+D:\github\PV\PV\PV\obj\Debug\PV.FrmCrearBackup.resources

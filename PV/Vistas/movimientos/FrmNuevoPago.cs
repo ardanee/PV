@@ -27,7 +27,7 @@ namespace PV
             try
             {
                 //BORRAR
-                ClsGlobals.usuario = "aramirez";
+                //ClsGlobals.usuario = "aramirez";
                     //BORRAR 
 
                 cboMetodoPago.DataSource = ClsMetodoPago.SeleccionarMetodoPago();
@@ -98,6 +98,11 @@ namespace PV
                     txtMonto.Focus();
                     return;
                 }
+                //Avisa si no ha adjuntado
+                if (MessageBox.Show("No ha adjuntado ningún archivo, ¿Desea continuar sin comprobante?", "Continuar sin adjunto", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
+                {
+                    return;
+                }
                 ClsPago.grabarPago(this.idVenta.ToString(), txtMonto.Text, cboMetodoPago.SelectedValue.ToString(), txtObservaciones.Text, adjunto);
                 ClsHelper.MensajeSistema("Pago registrado con éxito");
                 limpiarControles();
@@ -106,7 +111,10 @@ namespace PV
             catch (Exception ex)
             {
 
-                ClsHelper.erroLog(ex);
+                ClsHelper.MensajeSistema(ex.Message);
+            }
+            finally {
+                limpiarControles();
             }
         }
 
