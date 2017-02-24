@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace PV.Vistas.parciales
 {
-    public partial class frmCotizacionBusqueda : Form
+    public partial class frmPCotizacionBusqueda : Form
     {
         private Vistas.maestros.frmCotizacion padre;
         private BL.ClsCotizacion clsCotizacion = new BL.ClsCotizacion();
         private String idVehiculoo;
 
-        public frmCotizacionBusqueda(Vistas.maestros.frmCotizacion padre)
+        public frmPCotizacionBusqueda(Vistas.maestros.frmCotizacion padre)
         {
             InitializeComponent();
             this.padre = padre;

@@ -83,6 +83,16 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back_24px {
+            get {
+                object obj = ResourceManager.GetObject("Back_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cancel_File_24px {
             get {
                 object obj = ResourceManager.GetObject("Cancel File_24px", resourceCulture);
@@ -133,9 +143,29 @@ namespace PV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Deletee_24px {
+            get {
+                object obj = ResourceManager.GetObject("Deletee_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ferrari_Badge_96px {
             get {
                 object obj = ResourceManager.GetObject("Ferrari Badge_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forward_24px {
+            get {
+                object obj = ResourceManager.GetObject("Forward_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

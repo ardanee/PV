@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace PV.Vistas.parciales
 {
-    public partial class formCotizacionResultado : Form
+    public partial class frmPCotizacionResultado : Form
     {
         private String idVehiculo;
         private Vistas.maestros.frmCotizacion padre;
 
-        public formCotizacionResultado(String idVehiculo, Vistas.maestros.frmCotizacion padre)
+        public frmPCotizacionResultado(String idVehiculo, Vistas.maestros.frmCotizacion padre)
         {
             InitializeComponent();
             this.idVehiculo = idVehiculo;

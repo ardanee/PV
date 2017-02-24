@@ -68,7 +68,9 @@
     <Compile Include="BL\ClsLinea.cs" />
     <Compile Include="BL\ClsMarcaV.cs" />
     <Compile Include="BL\ClsSeguridad.cs" />
+    <Compile Include="BL\ClsTipoCosto.cs" />
     <Compile Include="BL\ClsTipoVehiculo.cs" />
+    <Compile Include="BL\ClsVehiculo.cs" />
     <Compile Include="BL\Correo.cs" />
     <Compile Include="DB\ClsDb.cs" />
     <Compile Include="Form1.cs">
@@ -87,11 +89,17 @@
     <Compile Include="Vistas\maestros\frmCotizacion.Designer.cs">
       <DependentUpon>frmCotizacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\maestros\frmIngresoVehiculo.cs">
+    <Compile Include="Vistas\maestros\frmIngresarVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\maestros\frmIngresoVehiculo.Designer.cs">
-      <DependentUpon>frmIngresoVehiculo.cs</DependentUpon>
+    <Compile Include="Vistas\maestros\frmIngresarVehiculo.Designer.cs">
+      <DependentUpon>frmIngresarVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPIngresoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPIngresoVehiculo.Designer.cs">
+      <DependentUpon>frmPIngresoVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\maestros\frmLinea.cs">
       <SubType>Form</SubType>
@@ -105,23 +113,35 @@
     <Compile Include="Vistas\maestros\frmMarcaV.Designer.cs">
       <DependentUpon>frmMarcaV.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\parciales\formCotizacionResultado.cs">
+    <Compile Include="Vistas\maestros\frmTipoCosto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\parciales\formCotizacionResultado.Designer.cs">
-      <DependentUpon>formCotizacionResultado.cs</DependentUpon>
+    <Compile Include="Vistas\maestros\frmTipoCosto.Designer.cs">
+      <DependentUpon>frmTipoCosto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\parciales\frmCotizacionBusqueda.cs">
+    <Compile Include="Vistas\parciales\frmPCotizacionResultado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\parciales\frmCotizacionBusqueda.Designer.cs">
-      <DependentUpon>frmCotizacionBusqueda.cs</DependentUpon>
+    <Compile Include="Vistas\parciales\frmPCotizacionResultado.Designer.cs">
+      <DependentUpon>frmPCotizacionResultado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\parciales\frmDescripcionVehiculo.cs">
+    <Compile Include="Vistas\parciales\frmPCotizacionBusqueda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\parciales\frmDescripcionVehiculo.Designer.cs">
-      <DependentUpon>frmDescripcionVehiculo.cs</DependentUpon>
+    <Compile Include="Vistas\parciales\frmPCotizacionBusqueda.Designer.cs">
+      <DependentUpon>frmPCotizacionBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPListaVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPListaVehiculo.Designer.cs">
+      <DependentUpon>frmPListaVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPPIngresoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPPIngresoVehiculo.Designer.cs">
+      <DependentUpon>frmPPIngresoVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\seguridad\FrmNuevoRol.cs">
       <SubType>Form</SubType>
@@ -170,8 +190,11 @@
     <EmbeddedResource Include="Vistas\maestros\frmCotizacion.resx">
       <DependentUpon>frmCotizacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\maestros\frmIngresoVehiculo.resx">
-      <DependentUpon>frmIngresoVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\maestros\frmIngresarVehiculo.resx">
+      <DependentUpon>frmIngresarVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\frmPIngresoVehiculo.resx">
+      <DependentUpon>frmPIngresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\maestros\frmLinea.resx">
       <DependentUpon>frmLinea.cs</DependentUpon>
@@ -179,14 +202,20 @@
     <EmbeddedResource Include="Vistas\maestros\frmMarcaV.resx">
       <DependentUpon>frmMarcaV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\parciales\formCotizacionResultado.resx">
-      <DependentUpon>formCotizacionResultado.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\maestros\frmTipoCosto.resx">
+      <DependentUpon>frmTipoCosto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\parciales\frmCotizacionBusqueda.resx">
-      <DependentUpon>frmCotizacionBusqueda.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\parciales\frmPCotizacionResultado.resx">
+      <DependentUpon>frmPCotizacionResultado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\parciales\frmDescripcionVehiculo.resx">
-      <DependentUpon>frmDescripcionVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\parciales\frmPCotizacionBusqueda.resx">
+      <DependentUpon>frmPCotizacionBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\frmPListaVehiculo.resx">
+      <DependentUpon>frmPListaVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\frmPPIngresoVehiculo.resx">
+      <DependentUpon>frmPPIngresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\seguridad\FrmNuevoRol.resx">
       <DependentUpon>FrmNuevoRol.cs</DependentUpon>
@@ -283,6 +312,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Plus_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deletee_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

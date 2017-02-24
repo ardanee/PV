@@ -12,13 +12,13 @@ namespace PV.Vistas.maestros
 {
     public partial class frmCotizacion : Form
     {
-        private Vistas.parciales.frmCotizacionBusqueda parcialBusqueda;
-        private Vistas.parciales.formCotizacionResultado parcialResultado;
+        private Vistas.parciales.frmPCotizacionBusqueda parcialBusqueda;
+        private Vistas.parciales.frmPCotizacionResultado parcialResultado;
 
         public frmCotizacion()
         {
             InitializeComponent();
-            this.parcialBusqueda = new parciales.frmCotizacionBusqueda(this);
+            this.parcialBusqueda = new parciales.frmPCotizacionBusqueda(this);
             cargarParcialBusqueda();
             //myButtonObj btn = new myButtonObj();
             
@@ -34,7 +34,7 @@ namespace PV.Vistas.maestros
 
         public void cargarParcialCotizacion(String idVehiculo)
         {
-            this.parcialResultado = new Vistas.parciales.formCotizacionResultado(idVehiculo, this);
+            this.parcialResultado = new Vistas.parciales.frmPCotizacionResultado(idVehiculo, this);
             cargarForm(this.parcialResultado);
         }
         
@@ -65,18 +65,5 @@ namespace PV.Vistas.maestros
         
 
         
-    }
-    public class myButtonObj : UserControl
-    {
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            Graphics graphics = e.Graphics;
-            Pen myPen = new Pen(Color.Black);
-            graphics.DrawEllipse(myPen, 0, 0, 50, 50);
-            myPen.Dispose();
-            //base.OnPaint(e);
-        }
-
-
     }
 }

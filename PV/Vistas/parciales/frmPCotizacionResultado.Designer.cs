@@ -1,6 +1,6 @@
 ﻿namespace PV.Vistas.parciales
 {
-    partial class formCotizacionResultado
+    partial class frmPCotizacionResultado
     {
         /// <summary>
         /// Required designer variable.

@@ -53,7 +53,7 @@ BEGIN
 --Verifica si hay vehículos relacionados con el actual registro antes de borrar
 	IF EXISTS(SELECT 1 FROM TblVehiculo WHERE idLinea= @PidLinea)
 	BEGIN
-		RAISERROR ('No se puede eliminar porque actualmente hay vehículos que tienen asignado este tipo',16,1);
+		RAISERROR ('No se puede eliminar porque actualmente hay vehículos que tienen asignado este linea',16,1);
 	END
 	ELSE
 	BEGIN

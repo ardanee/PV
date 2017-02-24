@@ -37,6 +37,8 @@ SELECT idMarca,nombre
 END;
 go
  
+ 
+ 
  go
 -- PROCEDIMIENTO PARA ELIMINAR  TABLA MARCA
 CREATE PROCEDURE [DBO].[SpdMarca]
@@ -46,12 +48,11 @@ BEGIN
 --Verifica si hay vehículos relacionados con el actual registro antes de borrar
 	IF EXISTS(SELECT 1 FROM TblVehiculo WHERE idMarca= @PidMarca)
 	BEGIN
-		RAISERROR ('No se puede eliminar porque actualmente hay vehículos que tienen asignado este tipo',16,1);
+		RAISERROR ('No se puede eliminar porque actualmente hay vehículos que tienen asignado esta marca',16,1);
 	END
 	ELSE
 	BEGIN
 		DELETE Tblmarca WHERE idMarca = @PidMarca
 	END
 END;
-
 go
