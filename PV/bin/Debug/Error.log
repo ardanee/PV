@@ -59,3 +59,104 @@
    en PV.Vistas.frmTipoVehiculo.buscar() en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 44
    en PV.Vistas.frmTipoVehiculo.frmTipoVehiculo_Load(Object sender, EventArgs e) en C:\Sistemas San Diego\PV\PV\PV\Vistas\maestros\frmTipoVehiculo.cs:línea 26
 
+   16/02/2017 9:47:59      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:02:24      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:04:31      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:04:41      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:05:13      SOPORTE-PC   No se pudo encontrar la columna denominada idMarcaCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:05:50      SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   grdExistentes_CellClick      en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 74
+
+   16/02/2017 10:06:05      SOPORTE-PC   Referencia a objeto no establecida como instancia de un objeto.   grdExistentes_CellClick      en PV.Vistas.maestros.frmMarcaV.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmMarcaV.cs:línea 81
+
+   23/02/2017 10:40:42      SOPORTE-PC   No se pudo encontrar la columna denominada idTipoVehiculoCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmTipoCosto.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmTipoCosto.cs:línea 123
+
+   23/02/2017 10:41:01      SOPORTE-PC   No se pudo encontrar la columna denominada idTipoVehiculoCol.
+Nombre del parámetro: columnName   get_Item      en System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   en PV.Vistas.maestros.frmTipoCosto.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmTipoCosto.cs:línea 123
+
+   23/02/2017 20:10:34      SOPORTE-PC   No se puede encontrar la columna [asdasd].   Bind      en System.Data.NameNode.Bind(DataTable table, List`1 list)
+   en System.Data.BinaryNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 159
+
+   23/02/2017 20:11:23      SOPORTE-PC   No se puede encontrar la columna [D1].   Bind      en System.Data.NameNode.Bind(DataTable table, List`1 list)
+   en System.Data.BinaryNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 159
+
+   23/02/2017 20:13:44      SOPORTE-PC   No se puede encontrar la columna [D1].   Bind      en System.Data.NameNode.Bind(DataTable table, List`1 list)
+   en System.Data.BinaryNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 159
+
+   23/02/2017 20:14:24      SOPORTE-PC   No se puede encontrar la columna [D1id].   Bind      en System.Data.NameNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 159
+
+   23/02/2017 20:14:47      SOPORTE-PC   No se puede encontrar la columna [D1].   Bind      en System.Data.NameNode.Bind(DataTable table, List`1 list)
+   en System.Data.BinaryNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 159
+
+   23/02/2017 21:04:18      SOPORTE-PC   El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index   get_Item      en System.Collections.ArrayList.get_Item(Int32 index)
+   en System.Windows.Forms.DataGridViewSelectedRowCollection.get_Item(Int32 index)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 165
+
+   23/02/2017 21:04:52      SOPORTE-PC   El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index   get_Item      en System.Collections.ArrayList.get_Item(Int32 index)
+   en System.Windows.Forms.DataGridViewSelectedRowCollection.get_Item(Int32 index)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 165
+
+   23/02/2017 21:05:54      SOPORTE-PC   El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index   get_Item      en System.Collections.ArrayList.get_Item(Int32 index)
+   en System.Windows.Forms.DataGridViewSelectedRowCollection.get_Item(Int32 index)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 165
+
+   23/02/2017 21:07:02      SOPORTE-PC   El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index   get_Item      en System.Collections.ArrayList.get_Item(Int32 index)
+   en System.Windows.Forms.DataGridViewSelectedRowCollection.get_Item(Int32 index)
+   en PV.Vistas.maestros.frmIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\maestros\frmIngresoVehiculo.cs:línea 165
+
+   24/02/2017 01:04:55 a.m.      SOPORTE-PC   La conversión especificada no es válida.   totalCosto      en PV.Vistas.parciales.frmPPIngresoVehiculo.totalCosto() en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\parciales\frmPPIngresoVehiculo.cs:línea 190
+   en PV.Vistas.parciales.frmPPIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\parciales\frmPPIngresoVehiculo.cs:línea 153
+
+   24/02/2017 01:12:28 a.m.      SOPORTE-PC   No se puede encontrar la columna [D1].   Bind      en System.Data.NameNode.Bind(DataTable table, List`1 list)
+   en System.Data.BinaryNode.Bind(DataTable table, List`1 list)
+   en System.Data.DataExpression.Bind(DataTable table)
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en PV.Vistas.parciales.frmPPIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\parciales\frmPPIngresoVehiculo.cs:línea 150
+
+   24/02/2017 01:23:18 a.m.      SOPORTE-PC   La conversión especificada no es válida.   totalCosto      en PV.Vistas.parciales.frmPPIngresoVehiculo.totalCosto() en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\parciales\frmPPIngresoVehiculo.cs:línea 190
+   en PV.Vistas.parciales.frmPPIngresoVehiculo.grdExistentes_CellClick(Object sender, DataGridViewCellEventArgs e) en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\parciales\frmPPIngresoVehiculo.cs:línea 152
+
+   24/02/2017 01:26:04 a.m.      SOPORTE-PC   La conversión especificada no es válida.   totalCosto      en PV.Vistas.parciales.frmPPIngresoVehiculo.totalCosto() en c:\Users\Soporte\Documents\GitHub\PV\PV\Vistas\parciales\frmPPIngresoVehiculo.cs:línea 190
+

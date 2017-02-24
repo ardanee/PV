@@ -41,6 +41,15 @@
       <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -55,8 +64,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\ClsCotizacion.cs" />
+    <Compile Include="BL\ClsLinea.cs" />
+    <Compile Include="BL\ClsMarcaV.cs" />
     <Compile Include="BL\ClsSeguridad.cs" />
+    <Compile Include="BL\ClsTipoCosto.cs" />
     <Compile Include="BL\ClsTipoVehiculo.cs" />
+    <Compile Include="BL\ClsVehiculo.cs" />
+    <Compile Include="BL\Correo.cs" />
     <Compile Include="DB\ClsDb.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -68,6 +83,66 @@
     <Compile Include="Helpers\ClsHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\maestros\frmCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmCotizacion.Designer.cs">
+      <DependentUpon>frmCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmIngresarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmIngresarVehiculo.Designer.cs">
+      <DependentUpon>frmIngresarVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPIngresoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPIngresoVehiculo.Designer.cs">
+      <DependentUpon>frmPIngresoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmLinea.Designer.cs">
+      <DependentUpon>frmLinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmMarcaV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmMarcaV.Designer.cs">
+      <DependentUpon>frmMarcaV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmTipoCosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\maestros\frmTipoCosto.Designer.cs">
+      <DependentUpon>frmTipoCosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPCotizacionResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPCotizacionResultado.Designer.cs">
+      <DependentUpon>frmPCotizacionResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPCotizacionBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPCotizacionBusqueda.Designer.cs">
+      <DependentUpon>frmPCotizacionBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPListaVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPListaVehiculo.Designer.cs">
+      <DependentUpon>frmPListaVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPPIngresoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\parciales\frmPPIngresoVehiculo.Designer.cs">
+      <DependentUpon>frmPPIngresoVehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\seguridad\FrmNuevoRol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +187,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\maestros\frmCotizacion.resx">
+      <DependentUpon>frmCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\frmIngresarVehiculo.resx">
+      <DependentUpon>frmIngresarVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\frmPIngresoVehiculo.resx">
+      <DependentUpon>frmPIngresoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\frmLinea.resx">
+      <DependentUpon>frmLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\frmMarcaV.resx">
+      <DependentUpon>frmMarcaV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\maestros\frmTipoCosto.resx">
+      <DependentUpon>frmTipoCosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\frmPCotizacionResultado.resx">
+      <DependentUpon>frmPCotizacionResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\frmPCotizacionBusqueda.resx">
+      <DependentUpon>frmPCotizacionBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\frmPListaVehiculo.resx">
+      <DependentUpon>frmPListaVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\parciales\frmPPIngresoVehiculo.resx">
+      <DependentUpon>frmPPIngresoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\seguridad\FrmNuevoRol.resx">
       <DependentUpon>FrmNuevoRol.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +258,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advertising_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil Tip_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save as_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel File_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ferrari Badge_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamborghini_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traffic Jam_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right Squared_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circled Left_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shipped_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visible_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deletee_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
