@@ -43,6 +43,7 @@
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -66,6 +67,7 @@
     <Compile Include="BL\ClsSeguridad.cs" />
     <Compile Include="BL\ClsTipoVehiculo.cs" />
     <Compile Include="DB\ClsDb.cs" />
+    <Compile Include="Helpers\ClsScanner.cs" />
     <Compile Include="Reportes\DtsEstadoCuenta.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,6 +102,12 @@
     </Compile>
     <Compile Include="Vistas\backups\FrmCrearBackup.Designer.cs">
       <DependentUpon>FrmCrearBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmScanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmScanner.Designer.cs">
+      <DependentUpon>FrmScanner.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\maestros\frmIngresoVehiculo.cs">
       <SubType>Form</SubType>
@@ -201,6 +209,9 @@
     <EmbeddedResource Include="Vistas\backups\FrmCrearBackup.resx">
       <DependentUpon>FrmCrearBackup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmScanner.resx">
+      <DependentUpon>FrmScanner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\maestros\frmIngresoVehiculo.resx">
       <DependentUpon>frmIngresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,7 +287,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="WIA">
+      <Guid>{94A0E92D-43C0-494E-AC29-FD45948A5221}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pencil.png" />
   </ItemGroup>

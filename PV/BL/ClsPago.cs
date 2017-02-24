@@ -69,5 +69,18 @@ namespace PV.BL
                 throw;
             }
         }
+
+        public void anularPago(String idPago)
+        {
+            try
+            {
+                ejecutarSP("SpAnularPago", null, Parametro("@PidPago", idPago), Parametro("@Pusuario", ClsGlobals.usuario));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
