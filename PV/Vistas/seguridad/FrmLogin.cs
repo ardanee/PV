@@ -13,6 +13,7 @@ namespace PV
     public partial class FrmLogin : Form
     {
         private int count = 5;
+        private Boolean success = false;
         public FrmLogin()
         {
             InitializeComponent();
@@ -40,7 +41,7 @@ namespace PV
         {
             try
             {
-
+                this.CenterToScreen();
             }
             catch (Exception ex)
             {
@@ -59,6 +60,7 @@ namespace PV
                 {
                     ClsGlobals.idUSuario = Convert.ToInt32(tblInformacionLogin.Rows[0]["idUsuario"].ToString());
                     ClsGlobals.usuario = tblInformacionLogin.Rows[0]["usuario"].ToString();
+                    success = true;
                     this.Close();
                 }
             }
@@ -66,8 +68,10 @@ namespace PV
             {
                 if (ex.Message.ToString().Contains("[CC]"))
                 {
-                    //'Abrir formulario de cambio de pass'
-                    ClsHelper.MensajeSistema(ex.Message);
+                                        ClsHelper.MensajeSistema(ex.Message);
+                    FrmCambiarContrasena frm = new FrmCambiarContrasena();
+                    frm.usuario  = txtUsuario.Text;
+                    frm.ShowDialog();
                 }
                 else
                 {
@@ -77,6 +81,22 @@ namespace PV
                 }
 
 
+            }
+        }
+
+        private void FrmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                if (!success)
+                {
+                    Application.Exit();
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                ClsHelper.erroLog(ex);
             }
         }
     }

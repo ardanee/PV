@@ -148,5 +148,18 @@ namespace PV.BL
         }
 
 
+        public void cambiarContrasena(String usuario, String antigua, String nueva)
+        {
+            try
+            {
+                ejecutarSP("SpCambiarContrasena", null, Parametro("@PUsuario", usuario), Parametro("@Pantigua", antigua), Parametro("@Pnueva", nueva));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
 }

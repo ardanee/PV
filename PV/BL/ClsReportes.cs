@@ -19,5 +19,18 @@ namespace PV.BL
                 throw;
             }
         }
+        public DataSet rptEstadoCuenta(String idVenta)
+        {
+            try
+            {
+                return consultarDataSetSP("SpEstadoCuenta", null, Parametro("@PidVenta", idVenta));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
 }

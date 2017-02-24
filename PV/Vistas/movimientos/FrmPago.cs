@@ -39,26 +39,33 @@ namespace PV
 
         private void grdVenta_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            switch (e.ColumnIndex)
+            try
             {
-                case 0:
-                    {
-                        cargarListaPagos();
-                        break;
-                    }
-                case 1:
-                    {
-
-                        break;
-                    }
-                case 2:
-                    {
-                        FrmNuevoPago frm = new FrmNuevoPago();
-                        frm.idVenta = Convert.ToInt32(grdVenta.SelectedRows[0].Cells["idVentaCol"].Value.ToString());
-                        frm.ShowDialog();
-                        cargarListaPagos();
-                        break;
-                    }
+                switch (e.ColumnIndex)
+                {
+                    case 0:
+                        {
+                            cargarListaPagos();
+                            break;
+                        }
+                    case 1:
+                        {
+                            mostrarEstadoCuenta();
+                            break;
+                        }
+                    case 2:
+                        {
+                            FrmNuevoPago frm = new FrmNuevoPago();
+                            frm.idVenta = Convert.ToInt32(grdVenta.SelectedRows[0].Cells["idVentaCol"].Value.ToString());
+                            frm.ShowDialog();
+                            cargarListaPagos();
+                            break;
+                        }
+                }
+            }
+            catch(Exception ex)
+            {
+                ClsHelper.erroLog(ex);
             }
         }
 
@@ -83,6 +90,23 @@ namespace PV
             {
 
                 ClsHelper.erroLog(ex);
+            }
+        }
+
+        void mostrarEstadoCuenta()
+        {
+            try
+            {
+                BL.ClsReportes ClsReportes = new BL.ClsReportes();
+                DataSet dts = new DataSet();
+                FrmReporte FrmReporte = new FrmReporte();
+                dts = ClsReportes.rptEstadoCuenta(grdVenta.SelectedRows[0].Cells["idVentaCol"].Value.ToString());
+                FrmReporte.cargarReporte("RptEstadoCuenta", dts);
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
 

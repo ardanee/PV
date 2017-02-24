@@ -25,7 +25,7 @@ namespace PV
             this.rw1.RefreshReport();
         }
 
-        public void cargarReporte(string nombreReporte, DataTable origenDatos)
+        public void cargarReporte(string nombreReporte, Object origenDatos)
         {
             try
             {
@@ -35,8 +35,16 @@ namespace PV
                         {
                             rw1.LocalReport.ReportPath = @"Reportes\RptRecibo.rdlc";
                             rw1.LocalReport.DataSources.Clear();
-                           rw1.LocalReport.DataSources.Add(new ReportDataSource("DtsRecibo", origenDatos));
+                            rw1.LocalReport.DataSources.Add(new ReportDataSource("DtsRecibo", (DataTable)origenDatos));
 
+                            break;
+                        }
+                    case "RptEstadoCuenta":
+                        {
+                            rw1.LocalReport.ReportPath = @"Reportes\RptEstadoCuenta.rdlc";
+                            rw1.LocalReport.DataSources.Clear();
+                            rw1.LocalReport.DataSources.Add(new ReportDataSource("DtsEstadoCuenta", ((DataSet)origenDatos).Tables[0]));
+                            rw1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", ((DataSet)origenDatos).Tables[1]));
                             break;
                         }
                 }

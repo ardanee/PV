@@ -430,7 +430,7 @@
             this.txtMonto.MaxLength = 50;
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(99, 27);
-            this.txtMonto.TabIndex = 54;
+            this.txtMonto.TabIndex = 0;
             // 
             // label3
             // 
@@ -451,7 +451,7 @@
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtObservaciones.Size = new System.Drawing.Size(326, 66);
-            this.txtObservaciones.TabIndex = 56;
+            this.txtObservaciones.TabIndex = 3;
             // 
             // label5
             // 
@@ -472,7 +472,7 @@
             this.cboMetodoPago.Location = new System.Drawing.Point(219, 368);
             this.cboMetodoPago.Name = "cboMetodoPago";
             this.cboMetodoPago.Size = new System.Drawing.Size(326, 27);
-            this.cboMetodoPago.TabIndex = 60;
+            this.cboMetodoPago.TabIndex = 2;
             // 
             // btnImprimir
             // 
@@ -490,7 +490,7 @@
             this.btnImprimir.Location = new System.Drawing.Point(436, 317);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(109, 27);
-            this.btnImprimir.TabIndex = 61;
+            this.btnImprimir.TabIndex = 5;
             this.btnImprimir.Text = "Recibo";
             this.btnImprimir.UseVisualStyleBackColor = false;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
@@ -510,7 +510,7 @@
             this.btnGrabar.Location = new System.Drawing.Point(274, 472);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(214, 27);
-            this.btnGrabar.TabIndex = 58;
+            this.btnGrabar.TabIndex = 4;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
@@ -530,7 +530,7 @@
             this.btnAdjuntar.Location = new System.Drawing.Point(324, 317);
             this.btnAdjuntar.Name = "btnAdjuntar";
             this.btnAdjuntar.Size = new System.Drawing.Size(109, 27);
-            this.btnAdjuntar.TabIndex = 57;
+            this.btnAdjuntar.TabIndex = 1;
             this.btnAdjuntar.Text = "Adjuntar";
             this.btnAdjuntar.UseVisualStyleBackColor = false;
             // 

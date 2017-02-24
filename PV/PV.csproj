@@ -66,6 +66,11 @@
     <Compile Include="BL\ClsSeguridad.cs" />
     <Compile Include="BL\ClsTipoVehiculo.cs" />
     <Compile Include="DB\ClsDb.cs" />
+    <Compile Include="Reportes\DtsEstadoCuenta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DtsEstadoCuenta.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\DtsRecibo.cs">
       <DependentUpon>DtsRecibo.xsd</DependentUpon>
     </Compile>
@@ -89,6 +94,12 @@
     </Compile>
     <Compile Include="Reportes\FrmReporte.Designer.cs">
       <DependentUpon>FrmReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\backups\FrmCrearBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\backups\FrmCrearBackup.Designer.cs">
+      <DependentUpon>FrmCrearBackup.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\maestros\frmIngresoVehiculo.cs">
       <SubType>Form</SubType>
@@ -120,16 +131,22 @@
     <Compile Include="Vistas\movimientos\FrmPago.Designer.cs">
       <DependentUpon>FrmPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\seguridad\FrmCambiarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\seguridad\FrmCambiarContrasena.Designer.cs">
+      <DependentUpon>FrmCambiarContrasena.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\seguridad\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\seguridad\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\seguridad\FrmMain.cs">
+    <Compile Include="Vistas\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\seguridad\FrmMain.Designer.cs">
+    <Compile Include="Vistas\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\seguridad\FrmNuevoRol.cs">
@@ -179,7 +196,11 @@
     <EmbeddedResource Include="Reportes\FrmReporte.resx">
       <DependentUpon>FrmReporte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptEstadoCuenta.rdlc" />
     <EmbeddedResource Include="Reportes\RptRecibo.rdlc" />
+    <EmbeddedResource Include="Vistas\backups\FrmCrearBackup.resx">
+      <DependentUpon>FrmCrearBackup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\maestros\frmIngresoVehiculo.resx">
       <DependentUpon>frmIngresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,10 +216,13 @@
     <EmbeddedResource Include="Vistas\movimientos\FrmPago.resx">
       <DependentUpon>FrmPago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\seguridad\FrmCambiarContrasena.resx">
+      <DependentUpon>FrmCambiarContrasena.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\seguridad\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\seguridad\FrmMain.resx">
+    <EmbeddedResource Include="Vistas\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\seguridad\FrmNuevoRol.resx">
@@ -216,6 +240,17 @@
     <EmbeddedResource Include="Vistas\maestros\frmTipoVehiculo.resx">
       <DependentUpon>frmTipoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Reportes\DtsEstadoCuenta.xsc">
+      <DependentUpon>DtsEstadoCuenta.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DtsEstadoCuenta.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DtsEstadoCuenta.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\DtsEstadoCuenta.xss">
+      <DependentUpon>DtsEstadoCuenta.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\DtsRecibo.xsc">
       <DependentUpon>DtsRecibo.xsd</DependentUpon>
     </None>
