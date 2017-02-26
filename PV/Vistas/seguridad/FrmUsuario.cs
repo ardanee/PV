@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PV.Vistas
+namespace PV
 {
     public partial class FrmUsuario : Form
     {

@@ -28,57 +28,388 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblComputadora = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.statusStrip1.SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.txtUsuario = new DevExpress.XtraBars.BarStaticItem();
+            this.txtComputadora = new DevExpress.XtraBars.BarStaticItem();
+            this.mnuTipoVehiculo = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuMarca = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuLinea = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuCliente = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuTipoCosto = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuIngresoVehiculo = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuCotizacion = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuVenta = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuPago = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuReporteVenta = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuReporteClientesAtrasados = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuCerrarSesion = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuUsuario = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuRol = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuBackup = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuRestaurar = new DevExpress.XtraBars.BarButtonItem();
+            this.rbpMaestros = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbpMovimientos = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbpReportes = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbpSeguridad = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
             // 
-            // statusStrip1
+            // ribbon
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblComputadora,
-            this.lblUsuario});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 448);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.statusStrip1.Size = new System.Drawing.Size(621, 22);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
+            this.ribbon.ExpandCollapseItem.Id = 0;
+            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbon.ExpandCollapseItem,
+            this.skinRibbonGalleryBarItem1,
+            this.txtUsuario,
+            this.txtComputadora,
+            this.mnuTipoVehiculo,
+            this.mnuMarca,
+            this.mnuLinea,
+            this.mnuCliente,
+            this.mnuTipoCosto,
+            this.mnuIngresoVehiculo,
+            this.mnuCotizacion,
+            this.mnuVenta,
+            this.mnuPago,
+            this.mnuReporteVenta,
+            this.mnuReporteClientesAtrasados,
+            this.mnuCerrarSesion,
+            this.mnuUsuario,
+            this.mnuRol,
+            this.mnuBackup,
+            this.mnuRestaurar});
+            this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.MaxItemId = 20;
+            this.ribbon.Name = "ribbon";
+            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.rbpMaestros,
+            this.rbpMovimientos,
+            this.rbpReportes,
+            this.rbpSeguridad});
+            this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
+            this.ribbon.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ribbon.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbon.ShowCategoryInCaption = false;
+            this.ribbon.ShowToolbarCustomizeItem = false;
+            this.ribbon.Size = new System.Drawing.Size(730, 147);
+            this.ribbon.StatusBar = this.ribbonStatusBar1;
+            this.ribbon.Toolbar.ShowCustomizeItem = false;
+            this.ribbon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ribbon_ItemClick);
             // 
-            // lblComputadora
+            // skinRibbonGalleryBarItem1
             // 
-            this.lblComputadora.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComputadora.Name = "lblComputadora";
-            this.lblComputadora.Size = new System.Drawing.Size(0, 17);
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 1;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
-            // lblUsuario
+            // txtUsuario
             // 
-            this.lblUsuario.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(0, 17);
+            this.txtUsuario.Id = 2;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // txtComputadora
+            // 
+            this.txtComputadora.Id = 3;
+            this.txtComputadora.Name = "txtComputadora";
+            this.txtComputadora.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // mnuTipoVehiculo
+            // 
+            this.mnuTipoVehiculo.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.mnuTipoVehiculo.Caption = "Tipos de Vehículo";
+            this.mnuTipoVehiculo.Id = 4;
+            this.mnuTipoVehiculo.Name = "mnuTipoVehiculo";
+            this.mnuTipoVehiculo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuTipoVehiculo.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuMarca
+            // 
+            this.mnuMarca.Caption = "Marcas";
+            this.mnuMarca.Id = 5;
+            this.mnuMarca.Name = "mnuMarca";
+            this.mnuMarca.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuMarca.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuLinea
+            // 
+            this.mnuLinea.Caption = "Líneas";
+            this.mnuLinea.Id = 6;
+            this.mnuLinea.Name = "mnuLinea";
+            this.mnuLinea.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuLinea.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuCliente
+            // 
+            this.mnuCliente.Caption = "Clientes";
+            this.mnuCliente.Id = 7;
+            this.mnuCliente.Name = "mnuCliente";
+            this.mnuCliente.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuCliente.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuTipoCosto
+            // 
+            this.mnuTipoCosto.Caption = "Tipos de Costo de Vehículos";
+            this.mnuTipoCosto.Id = 8;
+            this.mnuTipoCosto.Name = "mnuTipoCosto";
+            this.mnuTipoCosto.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuTipoCosto.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuIngresoVehiculo
+            // 
+            this.mnuIngresoVehiculo.Caption = "Ingreso de Vehículos";
+            this.mnuIngresoVehiculo.Id = 9;
+            this.mnuIngresoVehiculo.Name = "mnuIngresoVehiculo";
+            this.mnuIngresoVehiculo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuIngresoVehiculo.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuCotizacion
+            // 
+            this.mnuCotizacion.Caption = "Cotización";
+            this.mnuCotizacion.Id = 10;
+            this.mnuCotizacion.Name = "mnuCotizacion";
+            this.mnuCotizacion.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuCotizacion.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuVenta
+            // 
+            this.mnuVenta.Caption = "Venta";
+            this.mnuVenta.Id = 11;
+            this.mnuVenta.Name = "mnuVenta";
+            this.mnuVenta.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuVenta.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuPago
+            // 
+            this.mnuPago.Caption = "Pago";
+            this.mnuPago.Id = 12;
+            this.mnuPago.Name = "mnuPago";
+            this.mnuPago.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuPago.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuReporteVenta
+            // 
+            this.mnuReporteVenta.Caption = "Reporte de Ventas";
+            this.mnuReporteVenta.Id = 13;
+            this.mnuReporteVenta.Name = "mnuReporteVenta";
+            this.mnuReporteVenta.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuReporteVenta.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuReporteClientesAtrasados
+            // 
+            this.mnuReporteClientesAtrasados.Caption = "Clientes Con Cuotas Atrasadas";
+            this.mnuReporteClientesAtrasados.Id = 14;
+            this.mnuReporteClientesAtrasados.Name = "mnuReporteClientesAtrasados";
+            this.mnuReporteClientesAtrasados.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuReporteClientesAtrasados.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuCerrarSesion
+            // 
+            this.mnuCerrarSesion.Caption = "Cerrar Sesión";
+            this.mnuCerrarSesion.Id = 15;
+            this.mnuCerrarSesion.Name = "mnuCerrarSesion";
+            this.mnuCerrarSesion.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuCerrarSesion.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuCerrarSesion_ItemClick);
+            // 
+            // mnuUsuario
+            // 
+            this.mnuUsuario.Caption = "Usuarios";
+            this.mnuUsuario.Id = 16;
+            this.mnuUsuario.Name = "mnuUsuario";
+            this.mnuUsuario.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuUsuario.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuRol
+            // 
+            this.mnuRol.Caption = "Roles";
+            this.mnuRol.Id = 17;
+            this.mnuRol.Name = "mnuRol";
+            this.mnuRol.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuRol.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuBackup
+            // 
+            this.mnuBackup.Caption = "Crear Copia de Seguridad";
+            this.mnuBackup.Id = 18;
+            this.mnuBackup.Name = "mnuBackup";
+            this.mnuBackup.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuBackup.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // mnuRestaurar
+            // 
+            this.mnuRestaurar.Caption = "Restaurar";
+            this.mnuRestaurar.Id = 19;
+            this.mnuRestaurar.Name = "mnuRestaurar";
+            this.mnuRestaurar.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mnuRestaurar.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // rbpMaestros
+            // 
+            this.rbpMaestros.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2});
+            this.rbpMaestros.Name = "rbpMaestros";
+            this.rbpMaestros.Text = "Maestros";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.mnuTipoVehiculo);
+            this.ribbonPageGroup1.ItemLinks.Add(this.mnuMarca);
+            this.ribbonPageGroup1.ItemLinks.Add(this.mnuLinea);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Maestros de vehículos";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.mnuCliente);
+            this.ribbonPageGroup2.ItemLinks.Add(this.mnuTipoCosto);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Otros Maestros";
+            // 
+            // rbpMovimientos
+            // 
+            this.rbpMovimientos.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup3});
+            this.rbpMovimientos.Name = "rbpMovimientos";
+            this.rbpMovimientos.Text = "Movimientos";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.mnuIngresoVehiculo);
+            this.ribbonPageGroup3.ItemLinks.Add(this.mnuCotizacion);
+            this.ribbonPageGroup3.ItemLinks.Add(this.mnuVenta);
+            this.ribbonPageGroup3.ItemLinks.Add(this.mnuPago);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            // 
+            // rbpReportes
+            // 
+            this.rbpReportes.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup4});
+            this.rbpReportes.Name = "rbpReportes";
+            this.rbpReportes.Text = "Reportes";
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.mnuReporteVenta);
+            this.ribbonPageGroup4.ItemLinks.Add(this.mnuReporteClientesAtrasados);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            // 
+            // rbpSeguridad
+            // 
+            this.rbpSeguridad.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup5,
+            this.ribbonPageGroup6,
+            this.ribbonPageGroup7});
+            this.rbpSeguridad.Name = "rbpSeguridad";
+            this.rbpSeguridad.Text = "Seguridad";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.mnuCerrarSesion);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            // 
+            // ribbonPageGroup6
+            // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.mnuUsuario);
+            this.ribbonPageGroup6.ItemLinks.Add(this.mnuRol);
+            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            this.ribbonPageGroup6.Text = "Accesos";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.mnuBackup);
+            this.ribbonPageGroup7.ItemLinks.Add(this.mnuRestaurar);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "Base de Datos";
+            // 
+            // ribbonStatusBar1
+            // 
+            this.ribbonStatusBar1.ItemLinks.Add(this.txtComputadora, true);
+            this.ribbonStatusBar1.ItemLinks.Add(this.txtUsuario, true);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 568);
+            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
+            this.ribbonStatusBar1.Ribbon = this.ribbon;
+            this.ribbonStatusBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(730, 23);
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013 Light Gray";
+            // 
+            // xtraTabbedMdiManager1
+            // 
+            this.xtraTabbedMdiManager1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
+            this.xtraTabbedMdiManager1.MdiParent = this;
             // 
             // FrmMain
             // 
+            this.AllowMdiBar = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 470);
-            this.Controls.Add(this.statusStrip1);
+            this.ClientSize = new System.Drawing.Size(730, 591);
+            this.Controls.Add(this.ribbonStatusBar1);
+            this.Controls.Add(this.ribbon);
+            this.IsMdiContainer = true;
             this.Name = "FrmMain";
+            this.Ribbon = this.ribbon;
+            this.StatusBar = this.ribbonStatusBar1;
             this.Text = "FrmMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel lblComputadora;
-        private System.Windows.Forms.ToolStripStatusLabel lblUsuario;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
+        private DevExpress.XtraBars.Ribbon.RibbonPage rbpMaestros;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private DevExpress.XtraBars.BarStaticItem txtUsuario;
+        private DevExpress.XtraBars.BarStaticItem txtComputadora;
+        private DevExpress.XtraBars.BarButtonItem mnuTipoVehiculo;
+        private DevExpress.XtraBars.BarButtonItem mnuMarca;
+        private DevExpress.XtraBars.BarButtonItem mnuLinea;
+        private DevExpress.XtraBars.BarButtonItem mnuCliente;
+        private DevExpress.XtraBars.BarButtonItem mnuTipoCosto;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem mnuIngresoVehiculo;
+        private DevExpress.XtraBars.BarButtonItem mnuCotizacion;
+        private DevExpress.XtraBars.BarButtonItem mnuVenta;
+        private DevExpress.XtraBars.BarButtonItem mnuPago;
+        private DevExpress.XtraBars.Ribbon.RibbonPage rbpMovimientos;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.Ribbon.RibbonPage rbpReportes;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private DevExpress.XtraBars.BarButtonItem mnuReporteVenta;
+        private DevExpress.XtraBars.BarButtonItem mnuReporteClientesAtrasados;
+        private DevExpress.XtraBars.BarButtonItem mnuCerrarSesion;
+        private DevExpress.XtraBars.BarButtonItem mnuUsuario;
+        private DevExpress.XtraBars.BarButtonItem mnuRol;
+        private DevExpress.XtraBars.BarButtonItem mnuBackup;
+        private DevExpress.XtraBars.BarButtonItem mnuRestaurar;
+        private DevExpress.XtraBars.Ribbon.RibbonPage rbpSeguridad;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
     }
 }

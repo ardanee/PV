@@ -144,14 +144,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="fechaPago1">
+                    <Textbox Name="fechaEsperada">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!fechaPago.Value</Value>
+                              <Value>=Fields!fechaEsperada.Value</Value>
                               <Style>
                                 <Format>d</Format>
                               </Style>
@@ -162,7 +162,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>fechaPago1</rd:DefaultName>
+                      <rd:DefaultName>fechaEsperada</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -496,10 +496,21 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
+        <SortExpressions>
+          <SortExpression>
+            <Value>=Fields!numeroCuota.Value</Value>
+          </SortExpression>
+          <SortExpression>
+            <Value>=Fields!fechaEsperada.Value</Value>
+          </SortExpression>
+          <SortExpression>
+            <Value>=Fields!fechaPago.Value</Value>
+          </SortExpression>
+        </SortExpressions>
         <Top>9.80667cm</Top>
         <Left>2.00766cm</Left>
         <Height>1.17354cm</Height>
-        <Width>12.95104cm</Width>
+        <Width>12.95105cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>

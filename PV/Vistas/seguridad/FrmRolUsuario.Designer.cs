@@ -37,14 +37,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRolUsuario));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdRoles = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.btnGrabar = new System.Windows.Forms.Button();
             this.accesoCol = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idRolCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnGrabar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdRoles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,6 +109,40 @@
             this.grdRoles.Size = new System.Drawing.Size(440, 198);
             this.grdRoles.TabIndex = 0;
             // 
+            // accesoCol
+            // 
+            this.accesoCol.DataPropertyName = "acceso";
+            this.accesoCol.FillWeight = 55.80349F;
+            this.accesoCol.HeaderText = "";
+            this.accesoCol.MinimumWidth = 30;
+            this.accesoCol.Name = "accesoCol";
+            this.accesoCol.Width = 30;
+            // 
+            // idRolCol
+            // 
+            this.idRolCol.DataPropertyName = "idRol";
+            this.idRolCol.FillWeight = 35.81794F;
+            this.idRolCol.HeaderText = "ID";
+            this.idRolCol.MinimumWidth = 30;
+            this.idRolCol.Name = "idRolCol";
+            this.idRolCol.Width = 43;
+            // 
+            // nombreCol
+            // 
+            this.nombreCol.DataPropertyName = "nombre";
+            this.nombreCol.FillWeight = 155.9841F;
+            this.nombreCol.HeaderText = "Nombre";
+            this.nombreCol.Name = "nombreCol";
+            this.nombreCol.Width = 74;
+            // 
+            // descripcionCol
+            // 
+            this.descripcionCol.DataPropertyName = "descripcion";
+            this.descripcionCol.FillWeight = 118.8374F;
+            this.descripcionCol.HeaderText = "Descripción";
+            this.descripcionCol.Name = "descripcionCol";
+            this.descripcionCol.Width = 94;
+            // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -153,7 +187,7 @@
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(439, 34);
             this.lblTitulo.TabIndex = 11;
-            this.lblTitulo.Text = "lblTitulo";
+            this.lblTitulo.Text = "Roles para usuario";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnGrabar
@@ -173,40 +207,6 @@
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            // 
-            // accesoCol
-            // 
-            this.accesoCol.DataPropertyName = "acceso";
-            this.accesoCol.FillWeight = 55.80349F;
-            this.accesoCol.HeaderText = "";
-            this.accesoCol.MinimumWidth = 30;
-            this.accesoCol.Name = "accesoCol";
-            this.accesoCol.Width = 30;
-            // 
-            // idRolCol
-            // 
-            this.idRolCol.DataPropertyName = "idRol";
-            this.idRolCol.FillWeight = 35.81794F;
-            this.idRolCol.HeaderText = "ID";
-            this.idRolCol.MinimumWidth = 30;
-            this.idRolCol.Name = "idRolCol";
-            this.idRolCol.Width = 43;
-            // 
-            // nombreCol
-            // 
-            this.nombreCol.DataPropertyName = "nombre";
-            this.nombreCol.FillWeight = 155.9841F;
-            this.nombreCol.HeaderText = "Nombre";
-            this.nombreCol.Name = "nombreCol";
-            this.nombreCol.Width = 78;
-            // 
-            // descripcionCol
-            // 
-            this.descripcionCol.DataPropertyName = "descripcion";
-            this.descripcionCol.FillWeight = 118.8374F;
-            this.descripcionCol.HeaderText = "Descripción";
-            this.descripcionCol.Name = "descripcionCol";
-            this.descripcionCol.Width = 104;
             // 
             // FrmRolUsuario
             // 

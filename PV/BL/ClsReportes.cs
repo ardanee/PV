@@ -32,5 +32,18 @@ namespace PV.BL
             }
         }
 
+        public DataTable clientesMorosos()
+        {
+            try
+            {
+                return consultarTabla("SPClientesMorosos", null);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
 }

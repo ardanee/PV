@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using WIA;
 
-namespace PV.Vistas
+namespace PV
 {
     public partial class FrmScanner : Form
     {
@@ -21,6 +21,21 @@ namespace PV.Vistas
         public FrmScanner()
         {
             InitializeComponent();
+        }
+
+        public Boolean cargarForm()
+        {
+            success = false;
+            try
+            {
+                this.ShowDialog();
+                return success;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void btnEscanear_Click(object sender, EventArgs e)

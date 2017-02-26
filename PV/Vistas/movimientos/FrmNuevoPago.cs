@@ -158,24 +158,31 @@ namespace PV
 
         private void btnAdjuntar_Click(object sender, EventArgs e)
         {
-            String ruta;
             try
             {
                 SaveFileDialog sfd = new SaveFileDialog();
-                sfd.ShowDialog();
-                ruta = sfd.FileName;
-                //saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-                //saveFileDialog1.FilterIndex = 2;
-                //saveFileDialog1.RestoreDirectory = true;
+                sfd.Filter = "txt files (*.jpg)|*.jpg";
+                sfd.FilterIndex = 2;
+                sfd.RestoreDirectory = true;
 
-                //if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-                //{
-                //    if ((myStream = saveFileDialog1.OpenFile()) != null)
-                //    {
-                //        // Code to write the stream goes here.
-                //        myStream.Close();
-                //    }
-                //}
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    if (!String.IsNullOrEmpty(sfd.FileName))
+                    {
+                        FrmScanner frm = new FrmScanner();
+                        frm.ruta = sfd.FileName;
+                        if (frm.cargarForm())
+                        {
+                            adjunto = sfd.FileName; 
+                            ClsHelper.MensajeSistema("Adjuntado correctamente");
+                        }
+                        else
+                        {
+                            ClsHelper.MensajeSistema("No se pudo realizar la operación");
+                        }
+
+                    }
+                }
             }
             catch (Exception ex)
             {

@@ -198,3 +198,24 @@ Fin anómalo de BACKUP DATABASE.   ejecutarConsulta      en PV.ClsDb.ejecutarCon
 Fin anómalo de BACKUP DATABASE.   ejecutarConsulta      en PV.ClsDb.ejecutarConsulta(String sqlQuery, SqlConnection cn) en D:\github\PV\PV\PV\DB\ClsDb.cs:línea 260
    en PV.FrmCrearBackup.btnCrearCopia_Click(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\backups\FrmCrearBackup.cs:línea 54
 
+   26/02/2017 15:41:36   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   mostrarMenu      en PV.FrmMain.mostrarMenu() en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 57
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 33
+
+   26/02/2017 15:43:31   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   mostrarMenu      en PV.FrmMain.mostrarMenu() en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 57
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 33
+
+   26/02/2017 16:05:50   aramirez   KKROT-PC   La expresión contiene una llamada a la función sin definir LTRIM().   .ctor      en System.Data.FunctionNode..ctor(DataTable table, String name)
+   en System.Data.ExpressionParser.Parse()
+   en System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   en System.Data.DataTable.Select(String filterExpression)
+   en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e)
+
+   26/02/2017 16:08:54   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e)
+
+   26/02/2017 16:26:39   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 75
+
+   26/02/2017 16:29:56   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   mostrarMenu      en PV.FrmMain.mostrarMenu() en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 60
+   en PV.FrmMain.FrmMain_Load(Object sender, EventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 35
+
+   26/02/2017 16:37:03   aramirez   KKROT-PC   Referencia a objeto no establecida como instancia de un objeto.   ribbon_ItemClick      en PV.FrmMain.ribbon_ItemClick(Object sender, ItemClickEventArgs e) en D:\github\PV\PV\PV\Vistas\FrmMain.cs:línea 75
+

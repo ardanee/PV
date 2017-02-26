@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PV.Vistas
+namespace PV
 {
-    public partial class frmTipoVehiculo : Form
+    public partial class FrmTipoVehiculo : Form
     {
         BL.ClsTipoVehiculo ClsTipoVehiculo = new BL.ClsTipoVehiculo();
         string idTipoVehiculo = "0";
-        public frmTipoVehiculo()
+        public FrmTipoVehiculo()
         {
             InitializeComponent();
         }

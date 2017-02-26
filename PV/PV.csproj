@@ -37,6 +37,10 @@
       <HintPath>..\packages\ClosedXML.0.86.0\lib\net40\ClosedXML.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
       <Private>True</Private>
@@ -96,6 +100,12 @@
     </Compile>
     <Compile Include="Reportes\FrmReporte.Designer.cs">
       <DependentUpon>FrmReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptCientesAtrasados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptCientesAtrasados.Designer.cs">
+      <DependentUpon>FrmRptCientesAtrasados.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\backups\FrmCrearBackup.cs">
       <SubType>Form</SubType>
@@ -181,11 +191,11 @@
     <Compile Include="Vistas\seguridad\FrmUsuario.Designer.cs">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\maestros\frmTipoVehiculo.cs">
+    <Compile Include="Vistas\maestros\FrmTipoVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\maestros\frmTipoVehiculo.Designer.cs">
-      <DependentUpon>frmTipoVehiculo.cs</DependentUpon>
+    <Compile Include="Vistas\maestros\FrmTipoVehiculo.Designer.cs">
+      <DependentUpon>FrmTipoVehiculo.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -203,6 +213,9 @@
     </Compile>
     <EmbeddedResource Include="Reportes\FrmReporte.resx">
       <DependentUpon>FrmReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptCientesAtrasados.resx">
+      <DependentUpon>FrmRptCientesAtrasados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\RptEstadoCuenta.rdlc" />
     <EmbeddedResource Include="Reportes\RptRecibo.rdlc" />
@@ -248,8 +261,8 @@
     <EmbeddedResource Include="Vistas\seguridad\FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\maestros\frmTipoVehiculo.resx">
-      <DependentUpon>frmTipoVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\maestros\FrmTipoVehiculo.resx">
+      <DependentUpon>FrmTipoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Reportes\DtsEstadoCuenta.xsc">
       <DependentUpon>DtsEstadoCuenta.xsd</DependentUpon>
@@ -357,6 +370,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Print_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft Excel_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

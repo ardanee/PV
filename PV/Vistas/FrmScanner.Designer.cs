@@ -1,4 +1,4 @@
-﻿namespace PV.Vistas
+﻿namespace PV
 {
     partial class FrmScanner
     {

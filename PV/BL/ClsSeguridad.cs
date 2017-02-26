@@ -161,5 +161,19 @@ namespace PV.BL
             }
         }
 
+        public DataTable formulariosPorUsuario()
+        {
+            String idUsuario = ClsGlobals.idUSuario.ToString();
+            try
+            {
+                return consultarTabla("SpFormulariosPorUsuario", null, Parametro("@PidUsuario", idUsuario));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
 }
