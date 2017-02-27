@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraBars.Alerter;
+using System.Threading;
 
 namespace PV
 {
@@ -45,6 +47,11 @@ namespace PV
                     txtUsuario.Caption = "Usuario: " + ClsGlobals.usuario + "  ";
                     txtComputadora.Caption = "Computadora: " + Environment.MachineName;
                     mostrarMenu();
+
+                    //Hilo que muestra la alerta
+                    Thread alertaThread = new Thread(new ThreadStart(this.mostrarAlerta));
+                    alertaThread.Start();
+
                 }
             }
             catch (Exception)
@@ -128,5 +135,59 @@ namespace PV
                 ClsHelper.erroLog(ex);
             }
         }
+
+        private void mostrarAlerta()
+        {
+            try
+            {
+                //Espera 1 minuto
+                Thread.Sleep(10);
+                BL.ClsReportes ClsReportes = new BL.ClsReportes();
+                DataTable dtMorosos = new DataTable();
+                dtMorosos = ClsReportes.clientesMorosos();
+                if (dtMorosos.Rows.Count > 0)
+                {
+                    // Create a regular custom button.
+                    AlertButton btn1 = new AlertButton(Image.FromFile(@"c:\folder-16x16.png"));
+                    btn1.Hint = "Ver Listado";
+                    btn1.Name = "btnListado";
+                    //// Create a check custom button.
+                    //AlertButton btn2 = new AlertButton(Image.FromFile(@"c:\clock-16x16.png"));
+                    //btn2.Style = AlertButtonStyle.CheckButton;
+                    //btn2.Down = true;
+                    //btn2.Hint = "Alert On";
+                    //btn2.Name = "buttonAlert";
+                    // Add buttons to the AlertControl and subscribe to the events to process button clicks
+                    alertControl1.Buttons.Add(btn1);
+                    //alertControl1.Buttons.Add(btn2);
+                    alertControl1.ButtonClick += new AlertButtonClickEventHandler(btnListado_Click);
+                    //alertControl1.ButtonDownChanged +=
+                    //    new AlertButtonDownChangedEventHandler(alertControl1_ButtonDownChanged);
+
+                    // Show a sample alert window.
+                    AlertInfo info = new AlertInfo("Clientes con pagos Atrasados", "¡Se han encontrado algunos clientes que tienen cuotas atrasadas!");
+                    alertControl1.Show(this, info);
+                                    
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
+        }
+
+      
+        void btnListado_Click(object sender, AlertButtonClickEventArgs e)
+        {
+            if (e.ButtonName == "btnListado")
+            {
+                FrmRptCientesAtrasados frm = new FrmRptCientesAtrasados();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
     }
 }

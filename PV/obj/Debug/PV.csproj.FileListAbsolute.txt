@@ -117,3 +117,5 @@ D:\github\PV\PV\PV\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
 D:\github\PV\PV\PV\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
 D:\github\PV\PV\PV\obj\Debug\PV.frmTipoVehiculo.resources
 D:\github\PV\PV\PV\obj\Debug\PV.FrmUsuario.resources
+C:\gitRepos\PV\PV\PV\obj\Debug\Interop.WIA.dll
+C:\gitRepos\PV\PV\PV\obj\Debug\PV.csproj.ResolveComReference.cache
